@@ -37,6 +37,13 @@
     <AssemblyOriginatorKeyFile>FatturaElettronica.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BusinessObjects">
+      <HintPath>..\BusinessObjects\BusinessObjects\bin\Debug\BusinessObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="FatturaElettronicaPA, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f61b7587c2e5a3b6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\FatturaElettronicaPA\bin\Debug\FatturaElettronicaPA.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -64,16 +71,6 @@
   <ItemGroup>
     <None Include="FatturaElettronica.snk" />
     <None Include="Properties\DataSources\FatturaElettronicaPA.PCL.FatturaElettronicaHeader.FatturaElettronicaHeader.datasource" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\BusinessObjects\BusinessObjects\BusinessObjects.csproj">
-      <Project>{06f90b65-7d19-46dc-8336-0f3335be6c76}</Project>
-      <Name>BusinessObjects</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FatturaElettronicaPA\FatturaElettronicaPA.csproj">
-      <Project>{417b2f7c-a46b-49da-b5e5-150ecf084bcd}</Project>
-      <Name>FatturaElettronicaPA</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
