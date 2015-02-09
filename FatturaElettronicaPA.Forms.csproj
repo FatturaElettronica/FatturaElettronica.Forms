@@ -37,12 +37,17 @@
     <AssemblyOriginatorKeyFile>FatturaElettronica.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BusinessObjects">
-      <HintPath>..\BusinessObjects\BusinessObjects\bin\Debug\BusinessObjects.dll</HintPath>
-    </Reference>
-    <Reference Include="FatturaElettronicaPA, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f61b7587c2e5a3b6, processorArchitecture=MSIL">
+    <Reference Include="BusinessObjects, Version=0.1.0.0, Culture=neutral, PublicKeyToken=ee01fa0baf555a0d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\FatturaElettronicaPA\bin\Debug\FatturaElettronicaPA.dll</HintPath>
+      <HintPath>..\..\amica\Amica Client\packages\BusinessObjects.0.1.0.0\lib\portable-net40+sl50+win+wp80+MonoAndroid10+MonoTouch10\BusinessObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="FatturaElettronicaPA, Version=0.1.0.0, Culture=neutral, PublicKeyToken=f61b7587c2e5a3b6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\amica\Amica Client\packages\FatturaElettronicaPA.0.1.0.0\lib\portable-net40+sl50+win+wp80+MonoAndroid10+MonoTouch10\FatturaElettronicaPA.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\amica\Amica Client\packages\Newtonsoft.Json.6.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -70,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="FatturaElettronica.snk" />
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\FatturaElettronicaPA.PCL.FatturaElettronicaHeader.FatturaElettronicaHeader.datasource" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
