@@ -7,4 +7,5 @@ v0.1.0
 Non rilasciata.
 
 - Upgrade to BusinessObject v0.1.2
+- Upgrade to FatturaElettronicaPA v0.1.5
 - Ora anche il FatturaElettronicaBody viene convalidato.
