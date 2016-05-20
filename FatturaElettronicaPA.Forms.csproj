@@ -37,12 +37,12 @@
     <AssemblyOriginatorKeyFile>FatturaElettronica.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BusinessObjects">
-      <HintPath>packages\BusinessObjects.0.1.2.0\lib\portable-net40+sl50+win+wp80+MonoAndroid10+MonoTouch10\BusinessObjects.dll</HintPath>
+    <Reference Include="BusinessObjects, Version=0.1.5.0, Culture=neutral, PublicKeyToken=ee01fa0baf555a0d, processorArchitecture=MSIL">
+      <HintPath>packages\BusinessObjects.0.1.5\lib\portable40-net40+sl5+win8+wp8\BusinessObjects.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="FatturaElettronicaPA">
-      <HintPath>packages\FatturaElettronicaPA.0.1.5.0\lib\portable-net40+sl50+win+wp80+MonoAndroid10+MonoTouch10\FatturaElettronicaPA.dll</HintPath>
+    <Reference Include="FatturaElettronicaPA, Version=0.2.0.0, Culture=neutral, PublicKeyToken=f61b7587c2e5a3b6, processorArchitecture=MSIL">
+      <HintPath>..\..\amica\Amica Client\packages\FatturaElettronicaPA.0.2.0\lib\portable40-net40+sl5+win8+wp8\FatturaElettronicaPA.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
