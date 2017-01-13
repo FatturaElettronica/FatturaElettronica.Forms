@@ -2080,7 +2080,7 @@
             // 
             // bindingSource
             // 
-            this.bindingSource.DataSource = typeof(FatturaElettronicaPA.FatturaElettronicaHeader.FatturaElettronicaHeader);
+            this.bindingSource.DataSource = typeof(FatturaElettronica.FatturaElettronicaHeader.FatturaElettronicaHeader);
             // 
             // label73
             // 

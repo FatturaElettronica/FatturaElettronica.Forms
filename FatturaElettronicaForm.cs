@@ -1,5 +1,5 @@
 ﻿using BusinessObjects;
-using FatturaElettronicaPA.Common;
+using FatturaElettronica.Common;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -10,7 +10,7 @@ namespace FatturaElettronicaPA.Forms
 {
     public partial class FatturaElettronicaForm : Form
     {
-        FatturaElettronica _fattura;
+        FatturaElettronica.FatturaElettronica _fattura;
         public FatturaElettronicaForm()
         {
             InitializeComponent();
@@ -240,7 +240,7 @@ namespace FatturaElettronicaPA.Forms
             control.DataBindings.Add(propertyName, bindingSource, dataMember, formattingEnabled);
         }
 
-        public FatturaElettronica FatturaElettronica {
+        public FatturaElettronica.FatturaElettronica FatturaElettronica {
             get { return _fattura;}
             set {
                 _fattura = value;
