@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v0.2.0
+======
+
+Non rilasciata.
+
+- Upgrade to FatturaElettronica v0.3
+- Project rename from FatturaElettronicaPA.Forms to FatturaElettronica.Forms
+
 v0.1.0
 ======
 
