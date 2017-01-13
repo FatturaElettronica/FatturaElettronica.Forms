@@ -8,7 +8,7 @@ Binding Form per `FatturaElettronica.FatturaElettronicaHeader`. Gira su .NET Fra
 ## Licenza
 FatturaElettronicaPA.Forms è un progetto open source [Gestionale Amica][ga] rilasciato sotto licenza [BSD][bsd].
 
-[bo]: http://github.com/FatturaElettronicaPA/BusinessObjects 
-[fe]: http://github.com/FatturaElettronicaPA/FatturaElettronica.NET
+[bo]: http://github.com/FatturaElettronica/BusinessObjects 
+[fe]: http://github.com/FatturaElettronica/FatturaElettronica.NET
 [ga]: http://gestionaleamica.com
-[bsd]: http://github.com/FatturaElettronicaPA/FatturaElettronica.Forms/blob/master/LICENSE
+[bsd]: http://github.com/FatturaElettronica/FatturaElettronica.Forms/blob/master/LICENSE
