@@ -1,4 +1,4 @@
-﻿namespace FatturaElettronicaPA.Forms
+﻿namespace FatturaElettronica.Forms
 {
     partial class FatturaElettronicaForm
     {
@@ -2080,7 +2080,7 @@
             // 
             // bindingSource
             // 
-            this.bindingSource.DataSource = typeof(FatturaElettronica.FatturaElettronicaHeader.FatturaElettronicaHeader);
+            this.bindingSource.DataSource = typeof(FatturaElettronicaHeader.FatturaElettronicaHeader);
             // 
             // label73
             // 

@@ -6,11 +6,11 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace FatturaElettronicaPA.Forms
+namespace FatturaElettronica.Forms
 {
     public partial class FatturaElettronicaForm : Form
     {
-        FatturaElettronica.FatturaElettronica _fattura;
+        FatturaElettronica _fattura;
         public FatturaElettronicaForm()
         {
             InitializeComponent();
@@ -240,7 +240,7 @@ namespace FatturaElettronicaPA.Forms
             control.DataBindings.Add(propertyName, bindingSource, dataMember, formattingEnabled);
         }
 
-        public FatturaElettronica.FatturaElettronica FatturaElettronica {
+        public FatturaElettronica FatturaElettronica {
             get { return _fattura;}
             set {
                 _fattura = value;

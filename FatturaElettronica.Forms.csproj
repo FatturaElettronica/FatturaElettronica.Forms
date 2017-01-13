@@ -7,8 +7,8 @@
     <ProjectGuid>{6E93B007-0B97-4D40-AE8B-67E665F5DE9A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FatturaElettronicaPA.Forms</RootNamespace>
-    <AssemblyName>FatturaElettronicaPA.Forms</AssemblyName>
+    <RootNamespace>FatturaElettronica.Forms</RootNamespace>
+    <AssemblyName>FatturaElettronica.Forms</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
