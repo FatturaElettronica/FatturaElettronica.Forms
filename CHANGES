@@ -6,8 +6,12 @@ v0.2.0
 
 Non rilasciata.
 
-- Upgrade to FatturaElettronica v0.3
-- Project rename from FatturaElettronicaPA.Forms to FatturaElettronica.Forms
+- Aggiunta Stabile Organizzazione a Cessionario Committente.
+- Formato Trasmissione supporta sia FPA12 (Pubblica Amministrazione) che FPR12 (Privati).
+- Codice Ufficio PA rinominato in Codice Destinatario.
+- Aggiunto campo PECDEstinatario.
+- Upgrade to FatturaElettronica v0.3.
+- Project rename from FatturaElettronicaPA.Forms to FatturaElettronica.Forms.
 
 v0.1.0
 ======

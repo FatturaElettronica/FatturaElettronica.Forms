@@ -218,6 +218,20 @@
             this.salvaApri = new System.Windows.Forms.Button();
             this.convalida = new System.Windows.Forms.Button();
             this.validationOutput = new System.Windows.Forms.TextBox();
+            this.tabCessionarioCommittenteStabileOrganizzazione = new System.Windows.Forms.TabPage();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.nazioneStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.ComboBox();
+            this.provinciaStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.ComboBox();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.comuneStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.TextBox();
+            this.label77 = new System.Windows.Forms.Label();
+            this.capStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.TextBox();
+            this.label78 = new System.Windows.Forms.Label();
+            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.TextBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.indirizzoStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.TextBox();
             this.tabHeader.SuspendLayout();
             this.tabDatiTrasmissione.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -256,6 +270,8 @@
             this.tabFatturaElettronica.SuspendLayout();
             this.tabHeaderContainer.SuspendLayout();
             this.tabConvalida.SuspendLayout();
+            this.tabCessionarioCommittenteStabileOrganizzazione.SuspendLayout();
+            this.groupBox15.SuspendLayout();
             this.SuspendLayout();
             // 
             // ok
@@ -1479,6 +1495,7 @@
             // 
             this.tabControl3.Controls.Add(this.tabCessionarioCommittenteDatiAnagrafici);
             this.tabControl3.Controls.Add(this.tabCessionaioCommittenteSede);
+            this.tabControl3.Controls.Add(this.tabCessionarioCommittenteStabileOrganizzazione);
             this.tabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl3.Location = new System.Drawing.Point(0, 0);
             this.tabControl3.Name = "tabControl3";
@@ -2104,6 +2121,141 @@
             this.validationOutput.Text = "Premi \'Convalida\' per convalidare i dati da esportare.";
             this.validationOutput.WordWrap = false;
             // 
+            // tabCessionarioCommittenteStabileOrganizzazione
+            // 
+            this.tabCessionarioCommittenteStabileOrganizzazione.Controls.Add(this.groupBox15);
+            this.tabCessionarioCommittenteStabileOrganizzazione.Location = new System.Drawing.Point(4, 22);
+            this.tabCessionarioCommittenteStabileOrganizzazione.Name = "tabCessionarioCommittenteStabileOrganizzazione";
+            this.tabCessionarioCommittenteStabileOrganizzazione.Size = new System.Drawing.Size(746, 298);
+            this.tabCessionarioCommittenteStabileOrganizzazione.TabIndex = 2;
+            this.tabCessionarioCommittenteStabileOrganizzazione.Text = "Stabile Organizzazione";
+            this.tabCessionarioCommittenteStabileOrganizzazione.UseVisualStyleBackColor = true;
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.label74);
+            this.groupBox15.Controls.Add(this.nazioneStabileOrganizzazioneCessionarioCommittente);
+            this.groupBox15.Controls.Add(this.provinciaStabileOrganizzazioneCessionarioCommittente);
+            this.groupBox15.Controls.Add(this.label75);
+            this.groupBox15.Controls.Add(this.label76);
+            this.groupBox15.Controls.Add(this.comuneStabileOrganizzazioneCessionarioCommittente);
+            this.groupBox15.Controls.Add(this.label77);
+            this.groupBox15.Controls.Add(this.capStabileOrganizzazioneCessionarioCommittente);
+            this.groupBox15.Controls.Add(this.label78);
+            this.groupBox15.Controls.Add(this.numeroCivicoStabileOrganizzazioneCessionarioCommittente);
+            this.groupBox15.Controls.Add(this.label79);
+            this.groupBox15.Controls.Add(this.indirizzoStabileOrganizzazioneCessionarioCommittente);
+            this.groupBox15.Location = new System.Drawing.Point(6, 6);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(359, 183);
+            this.groupBox15.TabIndex = 1;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Stabile Organizzazione (cessionario/commitente)";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(9, 153);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(49, 13);
+            this.label74.TabIndex = 25;
+            this.label74.Text = "Nazione:";
+            // 
+            // nazioneStabileOrganizzazioneCessionarioCommittente
+            // 
+            this.nazioneStabileOrganizzazioneCessionarioCommittente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.nazioneStabileOrganizzazioneCessionarioCommittente.FormattingEnabled = true;
+            this.nazioneStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 150);
+            this.nazioneStabileOrganizzazioneCessionarioCommittente.Name = "nazioneStabileOrganizzazioneCessionarioCommittente";
+            this.nazioneStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 21);
+            this.nazioneStabileOrganizzazioneCessionarioCommittente.TabIndex = 5;
+            // 
+            // provinciaStabileOrganizzazioneCessionarioCommittente
+            // 
+            this.provinciaStabileOrganizzazioneCessionarioCommittente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.provinciaStabileOrganizzazioneCessionarioCommittente.FormattingEnabled = true;
+            this.provinciaStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 123);
+            this.provinciaStabileOrganizzazioneCessionarioCommittente.Name = "provinciaStabileOrganizzazioneCessionarioCommittente";
+            this.provinciaStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(121, 21);
+            this.provinciaStabileOrganizzazioneCessionarioCommittente.TabIndex = 4;
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(9, 126);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(51, 13);
+            this.label75.TabIndex = 23;
+            this.label75.Text = "Provincia";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(9, 100);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(46, 13);
+            this.label76.TabIndex = 21;
+            this.label76.Text = "Comune";
+            // 
+            // comuneStabileOrganizzazioneCessionarioCommittente
+            // 
+            this.comuneStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 97);
+            this.comuneStabileOrganizzazioneCessionarioCommittente.MaxLength = 60;
+            this.comuneStabileOrganizzazioneCessionarioCommittente.Name = "comuneStabileOrganizzazioneCessionarioCommittente";
+            this.comuneStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
+            this.comuneStabileOrganizzazioneCessionarioCommittente.TabIndex = 3;
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(9, 74);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(28, 13);
+            this.label77.TabIndex = 19;
+            this.label77.Text = "CAP";
+            // 
+            // capStabileOrganizzazioneCessionarioCommittente
+            // 
+            this.capStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 71);
+            this.capStabileOrganizzazioneCessionarioCommittente.MaxLength = 5;
+            this.capStabileOrganizzazioneCessionarioCommittente.Name = "capStabileOrganizzazioneCessionarioCommittente";
+            this.capStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
+            this.capStabileOrganizzazioneCessionarioCommittente.TabIndex = 2;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(9, 48);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(78, 13);
+            this.label78.TabIndex = 17;
+            this.label78.Text = "Numero civico:";
+            // 
+            // numeroCivicoStabileOrganizzazioneCessionarioCommittente
+            // 
+            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 45);
+            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.MaxLength = 8;
+            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.Name = "numeroCivicoStabileOrganizzazioneCessionarioCommittente";
+            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
+            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.TabIndex = 1;
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(9, 22);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(45, 13);
+            this.label79.TabIndex = 15;
+            this.label79.Text = "Indirizzo";
+            // 
+            // indirizzoStabileOrganizzazioneCessionarioCommittente
+            // 
+            this.indirizzoStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 19);
+            this.indirizzoStabileOrganizzazioneCessionarioCommittente.MaxLength = 60;
+            this.indirizzoStabileOrganizzazioneCessionarioCommittente.Name = "indirizzoStabileOrganizzazioneCessionarioCommittente";
+            this.indirizzoStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
+            this.indirizzoStabileOrganizzazioneCessionarioCommittente.TabIndex = 0;
+            // 
             // FatturaElettronicaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2181,6 +2333,9 @@
             this.tabHeaderContainer.ResumeLayout(false);
             this.tabConvalida.ResumeLayout(false);
             this.tabConvalida.PerformLayout();
+            this.tabCessionarioCommittenteStabileOrganizzazione.ResumeLayout(false);
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2376,5 +2531,19 @@
         private System.Windows.Forms.TextBox progressivoInvio;
         private System.Windows.Forms.TextBox PECDestinatario;
         private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.TabPage tabCessionarioCommittenteStabileOrganizzazione;
+        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.Label label74;
+        public System.Windows.Forms.ComboBox nazioneStabileOrganizzazioneCessionarioCommittente;
+        public System.Windows.Forms.ComboBox provinciaStabileOrganizzazioneCessionarioCommittente;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.TextBox comuneStabileOrganizzazioneCessionarioCommittente;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.TextBox capStabileOrganizzazioneCessionarioCommittente;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.TextBox numeroCivicoStabileOrganizzazioneCessionarioCommittente;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.TextBox indirizzoStabileOrganizzazioneCessionarioCommittente;
     }
 }

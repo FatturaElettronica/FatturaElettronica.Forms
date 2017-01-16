@@ -82,6 +82,12 @@ namespace FatturaElettronica.Forms
             provinciaCessionarioCommittente.DataSource = Provincia.List.ToList();
             provinciaCessionarioCommittente.DisplayMember = "Descrizione";
             provinciaCessionarioCommittente.ValueMember = "Sigla";
+            provinciaStabileOrganizzazioneCessionarioCommittente.DataSource = Provincia.List.ToList();
+            provinciaStabileOrganizzazioneCessionarioCommittente.DisplayMember = "Descrizione";
+            provinciaStabileOrganizzazioneCessionarioCommittente.ValueMember = "Sigla";
+            nazioneStabileOrganizzazioneCessionarioCommittente.DataSource = Country.List.ToList();
+            nazioneStabileOrganizzazioneCessionarioCommittente.DisplayMember = "Description";
+            nazioneStabileOrganizzazioneCessionarioCommittente.ValueMember = "TwoLetterCode";
 
             // TerzoIntermediario
             idPaeseTerzoIntermediario.DataSource = Country.List.ToList();
@@ -199,6 +205,13 @@ namespace FatturaElettronica.Forms
             SetDataBindings(cognomeCessionarioCommittente, subchild + "Cognome");
             SetDataBindings(titoloCessionarioCommittente, subchild + "Titolo");
             SetDataBindings(codEORICessionarioCommittente, subchild + "CodEORI");
+            child = parent + "StabileOrganizzazione.";
+            SetDataBindings(indirizzoStabileOrganizzazioneCessionarioCommittente, child + "Indirizzo");
+            SetDataBindings(numeroCivicoStabileOrganizzazioneCessionarioCommittente, child + "NumeroCivico");
+            SetDataBindings(capStabileOrganizzazioneCessionarioCommittente, child + "CAP");
+            SetDataBindings(comuneStabileOrganizzazioneCessionarioCommittente, child + "Comune");
+            SetDataBindings(provinciaStabileOrganizzazioneCessionarioCommittente, child + "Provincia");
+            SetDataBindings(nazioneStabileOrganizzazioneCessionarioCommittente, child + "Nazione");
 
             // CessionarioCommittente.Sede
             child = parent + "Sede.";
