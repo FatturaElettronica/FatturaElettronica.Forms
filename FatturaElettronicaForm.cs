@@ -30,7 +30,8 @@ namespace FatturaElettronica.Forms
             idPaeseTrasmittente.ValueMember = "TwoLetterCode";
 
             formatoTrasmissione.DataSource = FormatoTrasmissione.List.ToList();
-            formatoTrasmissione.ValueMember = "Nome";
+            formatoTrasmissione.DisplayMember = "Descrizione";
+            formatoTrasmissione.ValueMember = "Sigla";
 
             provinciaAlbo.DataSource = Provincia.List.ToList();
             provinciaAlbo.DisplayMember = "Descrizione";
@@ -101,6 +102,7 @@ namespace FatturaElettronica.Forms
             SetDataBindings(progressivoInvio, parent + "ProgressivoInvio");
             SetDataBindings(formatoTrasmissione, parent + "FormatoTrasmissione");
             SetDataBindings(codiceDestinatario, parent + "CodiceDestinatario");
+            SetDataBindings(PECDestinatario, parent + "PECDestinatario");
 
             // DatiTrasmissione.IdTrasmittente
             var child = parent + "IdTrasmittente.";
@@ -237,7 +239,7 @@ namespace FatturaElettronica.Forms
             else { 
                 propertyName = "Text";
             }
-            control.DataBindings.Add(propertyName, bindingSource, dataMember, formattingEnabled);
+            control.DataBindings.Add(propertyName, bindingSource, dataMember, formattingEnabled, DataSourceUpdateMode.OnPropertyChanged);
         }
 
         public FatturaElettronica FatturaElettronica {
@@ -283,6 +285,21 @@ namespace FatturaElettronica.Forms
                 f.Write(validationOutput.Text);
             }
             Process.Start(filename);
+        }
+
+        private void formatoTrasmissione_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if ((string)formatoTrasmissione.SelectedValue == Impostazioni.FormatoTrasmissione.Privati)
+            {
+                codiceDestinatario.MaxLength = 7;
+                codiceDestinatario.Text = "0000000";
+            }
+            else
+            {
+                codiceDestinatario.MaxLength = 6;
+                codiceDestinatario.Text = string.Empty;
+                PECDestinatario.Text = string.Empty;
+            }
         }
     }
 }

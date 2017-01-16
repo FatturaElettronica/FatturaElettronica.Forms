@@ -32,6 +32,9 @@
             this.ok = new System.Windows.Forms.Button();
             this.tabHeader = new System.Windows.Forms.TabControl();
             this.tabDatiTrasmissione = new System.Windows.Forms.TabPage();
+            this.PECDestinatario = new System.Windows.Forms.TextBox();
+            this.label73 = new System.Windows.Forms.Label();
+            this.progressivoInvio = new System.Windows.Forms.TextBox();
             this.codiceDestinatario = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -208,15 +211,13 @@
             this.label72 = new System.Windows.Forms.Label();
             this.annulla = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabFatturaElettronica = new System.Windows.Forms.TabControl();
             this.tabHeaderContainer = new System.Windows.Forms.TabPage();
             this.tabConvalida = new System.Windows.Forms.TabPage();
             this.salvaApri = new System.Windows.Forms.Button();
             this.convalida = new System.Windows.Forms.Button();
             this.validationOutput = new System.Windows.Forms.TextBox();
-            this.progressivoInvio = new System.Windows.Forms.TextBox();
-            this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label73 = new System.Windows.Forms.Label();
             this.tabHeader.SuspendLayout();
             this.tabDatiTrasmissione.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -251,10 +252,10 @@
             this.groupBox14.SuspendLayout();
             this.tabSoggettoEmittente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             this.tabFatturaElettronica.SuspendLayout();
             this.tabHeaderContainer.SuspendLayout();
             this.tabConvalida.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // ok
@@ -283,6 +284,7 @@
             // 
             // tabDatiTrasmissione
             // 
+            this.tabDatiTrasmissione.Controls.Add(this.PECDestinatario);
             this.tabDatiTrasmissione.Controls.Add(this.label73);
             this.tabDatiTrasmissione.Controls.Add(this.progressivoInvio);
             this.tabDatiTrasmissione.Controls.Add(this.codiceDestinatario);
@@ -300,6 +302,33 @@
             this.tabDatiTrasmissione.Text = "Dati Trasmissione";
             this.tabDatiTrasmissione.UseVisualStyleBackColor = true;
             // 
+            // PECDestinatario
+            // 
+            this.PECDestinatario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.PECDestinatario.Location = new System.Drawing.Point(161, 179);
+            this.PECDestinatario.MaxLength = 256;
+            this.PECDestinatario.Name = "PECDestinatario";
+            this.PECDestinatario.Size = new System.Drawing.Size(196, 20);
+            this.PECDestinatario.TabIndex = 4;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(17, 182);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(90, 13);
+            this.label73.TabIndex = 11;
+            this.label73.Text = "PEC Destinatario:";
+            // 
+            // progressivoInvio
+            // 
+            this.progressivoInvio.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.progressivoInvio.Location = new System.Drawing.Point(161, 99);
+            this.progressivoInvio.MaxLength = 10;
+            this.progressivoInvio.Name = "progressivoInvio";
+            this.progressivoInvio.Size = new System.Drawing.Size(121, 20);
+            this.progressivoInvio.TabIndex = 9;
+            // 
             // codiceDestinatario
             // 
             this.codiceDestinatario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
@@ -314,9 +343,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(17, 156);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 13);
+            this.label7.Size = new System.Drawing.Size(102, 13);
             this.label7.TabIndex = 8;
-            this.label7.Text = "Codice Ufficio PA:";
+            this.label7.Text = "Codice Destinatario:";
             // 
             // label4
             // 
@@ -338,13 +367,15 @@
             // 
             // formatoTrasmissione
             // 
+            this.formatoTrasmissione.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.formatoTrasmissione.FormattingEnabled = true;
             this.formatoTrasmissione.Items.AddRange(new object[] {
             "SDI10"});
             this.formatoTrasmissione.Location = new System.Drawing.Point(161, 126);
             this.formatoTrasmissione.Name = "formatoTrasmissione";
-            this.formatoTrasmissione.Size = new System.Drawing.Size(121, 21);
+            this.formatoTrasmissione.Size = new System.Drawing.Size(196, 21);
             this.formatoTrasmissione.TabIndex = 2;
+            this.formatoTrasmissione.SelectedIndexChanged += new System.EventHandler(this.formatoTrasmissione_SelectedIndexChanged);
             // 
             // groupBox2
             // 
@@ -352,7 +383,7 @@
             this.groupBox2.Controls.Add(this.emailTrasmittente);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.telefonoTrasmittente);
-            this.groupBox2.Location = new System.Drawing.Point(8, 192);
+            this.groupBox2.Location = new System.Drawing.Point(8, 205);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(364, 80);
             this.groupBox2.TabIndex = 4;
@@ -2002,6 +2033,10 @@
             this.errorProvider1.ContainerControl = this;
             this.errorProvider1.DataSource = this.bindingSource;
             // 
+            // bindingSource
+            // 
+            this.bindingSource.DataSource = typeof(FatturaElettronicaHeader.FatturaElettronicaHeader);
+            // 
             // tabFatturaElettronica
             // 
             this.tabFatturaElettronica.Controls.Add(this.tabHeaderContainer);
@@ -2068,28 +2103,6 @@
             this.validationOutput.TabIndex = 2;
             this.validationOutput.Text = "Premi \'Convalida\' per convalidare i dati da esportare.";
             this.validationOutput.WordWrap = false;
-            // 
-            // progressivoInvio
-            // 
-            this.progressivoInvio.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.progressivoInvio.Location = new System.Drawing.Point(161, 99);
-            this.progressivoInvio.MaxLength = 10;
-            this.progressivoInvio.Name = "progressivoInvio";
-            this.progressivoInvio.Size = new System.Drawing.Size(121, 20);
-            this.progressivoInvio.TabIndex = 9;
-            // 
-            // bindingSource
-            // 
-            this.bindingSource.DataSource = typeof(FatturaElettronicaHeader.FatturaElettronicaHeader);
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(288, 156);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(102, 13);
-            this.label73.TabIndex = 10;
-            this.label73.Text = "(codice destinatario)";
             // 
             // FatturaElettronicaForm
             // 
@@ -2163,11 +2176,11 @@
             this.tabSoggettoEmittente.ResumeLayout(false);
             this.tabSoggettoEmittente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
             this.tabFatturaElettronica.ResumeLayout(false);
             this.tabHeaderContainer.ResumeLayout(false);
             this.tabConvalida.ResumeLayout(false);
             this.tabConvalida.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2361,6 +2374,7 @@
         private System.Windows.Forms.Button convalida;
         private System.Windows.Forms.Button salvaApri;
         private System.Windows.Forms.TextBox progressivoInvio;
+        private System.Windows.Forms.TextBox PECDestinatario;
         private System.Windows.Forms.Label label73;
     }
 }

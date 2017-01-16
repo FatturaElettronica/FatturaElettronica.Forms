@@ -41,8 +41,8 @@
       <HintPath>packages\BusinessObjects.0.1.5\lib\portable40-net40+sl5+win8+wp8\BusinessObjects.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="FatturaElettronica, Version=0.3.0.0, Culture=neutral, PublicKeyToken=f61b7587c2e5a3b6, processorArchitecture=MSIL">
-      <HintPath>packages\FatturaElettronica.0.3.0\lib\portable40-net40+sl5+win8+wp8\FatturaElettronica.dll</HintPath>
+    <Reference Include="FatturaElettronica, Version=0.3.1.0, Culture=neutral, PublicKeyToken=f61b7587c2e5a3b6, processorArchitecture=MSIL">
+      <HintPath>..\..\amica\Amica Client\packages\FatturaElettronica.0.3.1\lib\portable40-net40+sl5+win8+wp8\FatturaElettronica.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -76,6 +76,7 @@
   <ItemGroup>
     <None Include="FatturaElettronica.snk" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\FatturaElettronica.FatturaElettronicaHeader.FatturaElettronicaHeader.datasource" />
     <None Include="Properties\DataSources\FatturaElettronicaPA.PCL.FatturaElettronicaHeader.FatturaElettronicaHeader.datasource" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
