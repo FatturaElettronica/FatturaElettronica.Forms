@@ -187,6 +187,20 @@
             this.numeroCivicoCessionarioCommittente = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
             this.indirizzoCessionarioCommittente = new System.Windows.Forms.TextBox();
+            this.tabCessionarioCommittenteStabileOrganizzazione = new System.Windows.Forms.TabPage();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.nazioneStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.ComboBox();
+            this.provinciaStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.ComboBox();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.comuneStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.TextBox();
+            this.label77 = new System.Windows.Forms.Label();
+            this.capStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.TextBox();
+            this.label78 = new System.Windows.Forms.Label();
+            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.TextBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.indirizzoStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.TextBox();
             this.tabTerzoIntermediario = new System.Windows.Forms.TabPage();
             this.label64 = new System.Windows.Forms.Label();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
@@ -218,20 +232,18 @@
             this.salvaApri = new System.Windows.Forms.Button();
             this.convalida = new System.Windows.Forms.Button();
             this.validationOutput = new System.Windows.Forms.TextBox();
-            this.tabCessionarioCommittenteStabileOrganizzazione = new System.Windows.Forms.TabPage();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.label74 = new System.Windows.Forms.Label();
-            this.nazioneStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.ComboBox();
-            this.provinciaStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.ComboBox();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.comuneStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.TextBox();
-            this.label77 = new System.Windows.Forms.Label();
-            this.capStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.TextBox();
-            this.label78 = new System.Windows.Forms.Label();
-            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.TextBox();
-            this.label79 = new System.Windows.Forms.Label();
-            this.indirizzoStabileOrganizzazioneCessionarioCommittente = new System.Windows.Forms.TextBox();
+            this.tabCessionarioCommittenteRappresentanteFiscale = new System.Windows.Forms.TabPage();
+            this.label83 = new System.Windows.Forms.Label();
+            this.cognomeRappresentanteFiscaleCessionarioCommittente = new System.Windows.Forms.TextBox();
+            this.label84 = new System.Windows.Forms.Label();
+            this.nomeRappresentanteFiscaleCessionarioCommittente = new System.Windows.Forms.TextBox();
+            this.label85 = new System.Windows.Forms.Label();
+            this.denominazioneRappresentanteFiscaleCessionarioCommittente = new System.Windows.Forms.TextBox();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.label86 = new System.Windows.Forms.Label();
+            this.idCodiceRappresentanteFiscaleCessionarioCommittente = new System.Windows.Forms.TextBox();
+            this.label87 = new System.Windows.Forms.Label();
+            this.idPaeseRappresentanteFiscaleCessionarioCommittente = new System.Windows.Forms.ComboBox();
             this.tabHeader.SuspendLayout();
             this.tabDatiTrasmissione.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -261,6 +273,8 @@
             this.groupBox11.SuspendLayout();
             this.tabCessionaioCommittenteSede.SuspendLayout();
             this.groupBox12.SuspendLayout();
+            this.tabCessionarioCommittenteStabileOrganizzazione.SuspendLayout();
+            this.groupBox15.SuspendLayout();
             this.tabTerzoIntermediario.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox14.SuspendLayout();
@@ -270,8 +284,8 @@
             this.tabFatturaElettronica.SuspendLayout();
             this.tabHeaderContainer.SuspendLayout();
             this.tabConvalida.SuspendLayout();
-            this.tabCessionarioCommittenteStabileOrganizzazione.SuspendLayout();
-            this.groupBox15.SuspendLayout();
+            this.tabCessionarioCommittenteRappresentanteFiscale.SuspendLayout();
+            this.groupBox17.SuspendLayout();
             this.SuspendLayout();
             // 
             // ok
@@ -1419,7 +1433,7 @@
             // denominazioneRappresentanteFiscale
             // 
             this.denominazioneRappresentanteFiscale.Location = new System.Drawing.Point(153, 19);
-            this.denominazioneRappresentanteFiscale.MaxLength = 60;
+            this.denominazioneRappresentanteFiscale.MaxLength = 80;
             this.denominazioneRappresentanteFiscale.Name = "denominazioneRappresentanteFiscale";
             this.denominazioneRappresentanteFiscale.Size = new System.Drawing.Size(196, 20);
             this.denominazioneRappresentanteFiscale.TabIndex = 0;
@@ -1496,6 +1510,7 @@
             this.tabControl3.Controls.Add(this.tabCessionarioCommittenteDatiAnagrafici);
             this.tabControl3.Controls.Add(this.tabCessionaioCommittenteSede);
             this.tabControl3.Controls.Add(this.tabCessionarioCommittenteStabileOrganizzazione);
+            this.tabControl3.Controls.Add(this.tabCessionarioCommittenteRappresentanteFiscale);
             this.tabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl3.Location = new System.Drawing.Point(0, 0);
             this.tabControl3.Name = "tabControl3";
@@ -1823,6 +1838,141 @@
             this.indirizzoCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
             this.indirizzoCessionarioCommittente.TabIndex = 0;
             // 
+            // tabCessionarioCommittenteStabileOrganizzazione
+            // 
+            this.tabCessionarioCommittenteStabileOrganizzazione.Controls.Add(this.groupBox15);
+            this.tabCessionarioCommittenteStabileOrganizzazione.Location = new System.Drawing.Point(4, 22);
+            this.tabCessionarioCommittenteStabileOrganizzazione.Name = "tabCessionarioCommittenteStabileOrganizzazione";
+            this.tabCessionarioCommittenteStabileOrganizzazione.Size = new System.Drawing.Size(746, 298);
+            this.tabCessionarioCommittenteStabileOrganizzazione.TabIndex = 2;
+            this.tabCessionarioCommittenteStabileOrganizzazione.Text = "Stabile Organizzazione";
+            this.tabCessionarioCommittenteStabileOrganizzazione.UseVisualStyleBackColor = true;
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.label74);
+            this.groupBox15.Controls.Add(this.nazioneStabileOrganizzazioneCessionarioCommittente);
+            this.groupBox15.Controls.Add(this.provinciaStabileOrganizzazioneCessionarioCommittente);
+            this.groupBox15.Controls.Add(this.label75);
+            this.groupBox15.Controls.Add(this.label76);
+            this.groupBox15.Controls.Add(this.comuneStabileOrganizzazioneCessionarioCommittente);
+            this.groupBox15.Controls.Add(this.label77);
+            this.groupBox15.Controls.Add(this.capStabileOrganizzazioneCessionarioCommittente);
+            this.groupBox15.Controls.Add(this.label78);
+            this.groupBox15.Controls.Add(this.numeroCivicoStabileOrganizzazioneCessionarioCommittente);
+            this.groupBox15.Controls.Add(this.label79);
+            this.groupBox15.Controls.Add(this.indirizzoStabileOrganizzazioneCessionarioCommittente);
+            this.groupBox15.Location = new System.Drawing.Point(6, 6);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(359, 183);
+            this.groupBox15.TabIndex = 1;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Stabile Organizzazione (cessionario/commitente)";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(9, 153);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(49, 13);
+            this.label74.TabIndex = 25;
+            this.label74.Text = "Nazione:";
+            // 
+            // nazioneStabileOrganizzazioneCessionarioCommittente
+            // 
+            this.nazioneStabileOrganizzazioneCessionarioCommittente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.nazioneStabileOrganizzazioneCessionarioCommittente.FormattingEnabled = true;
+            this.nazioneStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 150);
+            this.nazioneStabileOrganizzazioneCessionarioCommittente.Name = "nazioneStabileOrganizzazioneCessionarioCommittente";
+            this.nazioneStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 21);
+            this.nazioneStabileOrganizzazioneCessionarioCommittente.TabIndex = 5;
+            // 
+            // provinciaStabileOrganizzazioneCessionarioCommittente
+            // 
+            this.provinciaStabileOrganizzazioneCessionarioCommittente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.provinciaStabileOrganizzazioneCessionarioCommittente.FormattingEnabled = true;
+            this.provinciaStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 123);
+            this.provinciaStabileOrganizzazioneCessionarioCommittente.Name = "provinciaStabileOrganizzazioneCessionarioCommittente";
+            this.provinciaStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(121, 21);
+            this.provinciaStabileOrganizzazioneCessionarioCommittente.TabIndex = 4;
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(9, 126);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(51, 13);
+            this.label75.TabIndex = 23;
+            this.label75.Text = "Provincia";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(9, 100);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(46, 13);
+            this.label76.TabIndex = 21;
+            this.label76.Text = "Comune";
+            // 
+            // comuneStabileOrganizzazioneCessionarioCommittente
+            // 
+            this.comuneStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 97);
+            this.comuneStabileOrganizzazioneCessionarioCommittente.MaxLength = 60;
+            this.comuneStabileOrganizzazioneCessionarioCommittente.Name = "comuneStabileOrganizzazioneCessionarioCommittente";
+            this.comuneStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
+            this.comuneStabileOrganizzazioneCessionarioCommittente.TabIndex = 3;
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(9, 74);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(28, 13);
+            this.label77.TabIndex = 19;
+            this.label77.Text = "CAP";
+            // 
+            // capStabileOrganizzazioneCessionarioCommittente
+            // 
+            this.capStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 71);
+            this.capStabileOrganizzazioneCessionarioCommittente.MaxLength = 5;
+            this.capStabileOrganizzazioneCessionarioCommittente.Name = "capStabileOrganizzazioneCessionarioCommittente";
+            this.capStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
+            this.capStabileOrganizzazioneCessionarioCommittente.TabIndex = 2;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(9, 48);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(78, 13);
+            this.label78.TabIndex = 17;
+            this.label78.Text = "Numero civico:";
+            // 
+            // numeroCivicoStabileOrganizzazioneCessionarioCommittente
+            // 
+            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 45);
+            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.MaxLength = 8;
+            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.Name = "numeroCivicoStabileOrganizzazioneCessionarioCommittente";
+            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
+            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.TabIndex = 1;
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(9, 22);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(45, 13);
+            this.label79.TabIndex = 15;
+            this.label79.Text = "Indirizzo";
+            // 
+            // indirizzoStabileOrganizzazioneCessionarioCommittente
+            // 
+            this.indirizzoStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 19);
+            this.indirizzoStabileOrganizzazioneCessionarioCommittente.MaxLength = 60;
+            this.indirizzoStabileOrganizzazioneCessionarioCommittente.Name = "indirizzoStabileOrganizzazioneCessionarioCommittente";
+            this.indirizzoStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
+            this.indirizzoStabileOrganizzazioneCessionarioCommittente.TabIndex = 0;
+            // 
             // tabTerzoIntermediario
             // 
             this.tabTerzoIntermediario.Controls.Add(this.label64);
@@ -2121,140 +2271,120 @@
             this.validationOutput.Text = "Premi \'Convalida\' per convalidare i dati da esportare.";
             this.validationOutput.WordWrap = false;
             // 
-            // tabCessionarioCommittenteStabileOrganizzazione
+            // tabCessionarioCommittenteRappresentanteFiscale
             // 
-            this.tabCessionarioCommittenteStabileOrganizzazione.Controls.Add(this.groupBox15);
-            this.tabCessionarioCommittenteStabileOrganizzazione.Location = new System.Drawing.Point(4, 22);
-            this.tabCessionarioCommittenteStabileOrganizzazione.Name = "tabCessionarioCommittenteStabileOrganizzazione";
-            this.tabCessionarioCommittenteStabileOrganizzazione.Size = new System.Drawing.Size(746, 298);
-            this.tabCessionarioCommittenteStabileOrganizzazione.TabIndex = 2;
-            this.tabCessionarioCommittenteStabileOrganizzazione.Text = "Stabile Organizzazione";
-            this.tabCessionarioCommittenteStabileOrganizzazione.UseVisualStyleBackColor = true;
+            this.tabCessionarioCommittenteRappresentanteFiscale.Controls.Add(this.groupBox17);
+            this.tabCessionarioCommittenteRappresentanteFiscale.Controls.Add(this.denominazioneRappresentanteFiscaleCessionarioCommittente);
+            this.tabCessionarioCommittenteRappresentanteFiscale.Controls.Add(this.label85);
+            this.tabCessionarioCommittenteRappresentanteFiscale.Controls.Add(this.label83);
+            this.tabCessionarioCommittenteRappresentanteFiscale.Controls.Add(this.nomeRappresentanteFiscaleCessionarioCommittente);
+            this.tabCessionarioCommittenteRappresentanteFiscale.Controls.Add(this.cognomeRappresentanteFiscaleCessionarioCommittente);
+            this.tabCessionarioCommittenteRappresentanteFiscale.Controls.Add(this.label84);
+            this.tabCessionarioCommittenteRappresentanteFiscale.Location = new System.Drawing.Point(4, 22);
+            this.tabCessionarioCommittenteRappresentanteFiscale.Name = "tabCessionarioCommittenteRappresentanteFiscale";
+            this.tabCessionarioCommittenteRappresentanteFiscale.Size = new System.Drawing.Size(746, 298);
+            this.tabCessionarioCommittenteRappresentanteFiscale.TabIndex = 3;
+            this.tabCessionarioCommittenteRappresentanteFiscale.Text = "Rappresentante Fiscale";
+            this.tabCessionarioCommittenteRappresentanteFiscale.UseVisualStyleBackColor = true;
             // 
-            // groupBox15
+            // label83
             // 
-            this.groupBox15.Controls.Add(this.label74);
-            this.groupBox15.Controls.Add(this.nazioneStabileOrganizzazioneCessionarioCommittente);
-            this.groupBox15.Controls.Add(this.provinciaStabileOrganizzazioneCessionarioCommittente);
-            this.groupBox15.Controls.Add(this.label75);
-            this.groupBox15.Controls.Add(this.label76);
-            this.groupBox15.Controls.Add(this.comuneStabileOrganizzazioneCessionarioCommittente);
-            this.groupBox15.Controls.Add(this.label77);
-            this.groupBox15.Controls.Add(this.capStabileOrganizzazioneCessionarioCommittente);
-            this.groupBox15.Controls.Add(this.label78);
-            this.groupBox15.Controls.Add(this.numeroCivicoStabileOrganizzazioneCessionarioCommittente);
-            this.groupBox15.Controls.Add(this.label79);
-            this.groupBox15.Controls.Add(this.indirizzoStabileOrganizzazioneCessionarioCommittente);
-            this.groupBox15.Location = new System.Drawing.Point(6, 6);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(359, 183);
-            this.groupBox15.TabIndex = 1;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Stabile Organizzazione (cessionario/commitente)";
+            this.label83.AutoSize = true;
+            this.label83.Location = new System.Drawing.Point(15, 158);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(55, 13);
+            this.label83.TabIndex = 9;
+            this.label83.Text = "Cognome:";
             // 
-            // label74
+            // cognomeRappresentanteFiscaleCessionarioCommittente
             // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(9, 153);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(49, 13);
-            this.label74.TabIndex = 25;
-            this.label74.Text = "Nazione:";
+            this.cognomeRappresentanteFiscaleCessionarioCommittente.Location = new System.Drawing.Point(159, 155);
+            this.cognomeRappresentanteFiscaleCessionarioCommittente.MaxLength = 60;
+            this.cognomeRappresentanteFiscaleCessionarioCommittente.Name = "cognomeRappresentanteFiscaleCessionarioCommittente";
+            this.cognomeRappresentanteFiscaleCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
+            this.cognomeRappresentanteFiscaleCessionarioCommittente.TabIndex = 3;
             // 
-            // nazioneStabileOrganizzazioneCessionarioCommittente
+            // label84
             // 
-            this.nazioneStabileOrganizzazioneCessionarioCommittente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.nazioneStabileOrganizzazioneCessionarioCommittente.FormattingEnabled = true;
-            this.nazioneStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 150);
-            this.nazioneStabileOrganizzazioneCessionarioCommittente.Name = "nazioneStabileOrganizzazioneCessionarioCommittente";
-            this.nazioneStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 21);
-            this.nazioneStabileOrganizzazioneCessionarioCommittente.TabIndex = 5;
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(15, 132);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(38, 13);
+            this.label84.TabIndex = 7;
+            this.label84.Text = "Nome:";
             // 
-            // provinciaStabileOrganizzazioneCessionarioCommittente
+            // nomeRappresentanteFiscaleCessionarioCommittente
             // 
-            this.provinciaStabileOrganizzazioneCessionarioCommittente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.provinciaStabileOrganizzazioneCessionarioCommittente.FormattingEnabled = true;
-            this.provinciaStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 123);
-            this.provinciaStabileOrganizzazioneCessionarioCommittente.Name = "provinciaStabileOrganizzazioneCessionarioCommittente";
-            this.provinciaStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(121, 21);
-            this.provinciaStabileOrganizzazioneCessionarioCommittente.TabIndex = 4;
+            this.nomeRappresentanteFiscaleCessionarioCommittente.Location = new System.Drawing.Point(159, 129);
+            this.nomeRappresentanteFiscaleCessionarioCommittente.MaxLength = 60;
+            this.nomeRappresentanteFiscaleCessionarioCommittente.Name = "nomeRappresentanteFiscaleCessionarioCommittente";
+            this.nomeRappresentanteFiscaleCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
+            this.nomeRappresentanteFiscaleCessionarioCommittente.TabIndex = 2;
             // 
-            // label75
+            // label85
             // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(9, 126);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(51, 13);
-            this.label75.TabIndex = 23;
-            this.label75.Text = "Provincia";
+            this.label85.AutoSize = true;
+            this.label85.Location = new System.Drawing.Point(15, 106);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(83, 13);
+            this.label85.TabIndex = 5;
+            this.label85.Text = "Denominazione:";
             // 
-            // label76
+            // denominazioneRappresentanteFiscaleCessionarioCommittente
             // 
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(9, 100);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(46, 13);
-            this.label76.TabIndex = 21;
-            this.label76.Text = "Comune";
+            this.denominazioneRappresentanteFiscaleCessionarioCommittente.Location = new System.Drawing.Point(159, 103);
+            this.denominazioneRappresentanteFiscaleCessionarioCommittente.MaxLength = 80;
+            this.denominazioneRappresentanteFiscaleCessionarioCommittente.Name = "denominazioneRappresentanteFiscaleCessionarioCommittente";
+            this.denominazioneRappresentanteFiscaleCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
+            this.denominazioneRappresentanteFiscaleCessionarioCommittente.TabIndex = 1;
             // 
-            // comuneStabileOrganizzazioneCessionarioCommittente
+            // groupBox17
             // 
-            this.comuneStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 97);
-            this.comuneStabileOrganizzazioneCessionarioCommittente.MaxLength = 60;
-            this.comuneStabileOrganizzazioneCessionarioCommittente.Name = "comuneStabileOrganizzazioneCessionarioCommittente";
-            this.comuneStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
-            this.comuneStabileOrganizzazioneCessionarioCommittente.TabIndex = 3;
+            this.groupBox17.Controls.Add(this.label86);
+            this.groupBox17.Controls.Add(this.idCodiceRappresentanteFiscaleCessionarioCommittente);
+            this.groupBox17.Controls.Add(this.label87);
+            this.groupBox17.Controls.Add(this.idPaeseRappresentanteFiscaleCessionarioCommittente);
+            this.groupBox17.Location = new System.Drawing.Point(6, 13);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(357, 84);
+            this.groupBox17.TabIndex = 0;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "Id Fiscale IVA";
             // 
-            // label77
+            // label86
             // 
-            this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(9, 74);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(28, 13);
-            this.label77.TabIndex = 19;
-            this.label77.Text = "CAP";
+            this.label86.AutoSize = true;
+            this.label86.Location = new System.Drawing.Point(9, 49);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(60, 13);
+            this.label86.TabIndex = 5;
+            this.label86.Text = "Partita IVA:";
             // 
-            // capStabileOrganizzazioneCessionarioCommittente
+            // idCodiceRappresentanteFiscaleCessionarioCommittente
             // 
-            this.capStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 71);
-            this.capStabileOrganizzazioneCessionarioCommittente.MaxLength = 5;
-            this.capStabileOrganizzazioneCessionarioCommittente.Name = "capStabileOrganizzazioneCessionarioCommittente";
-            this.capStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
-            this.capStabileOrganizzazioneCessionarioCommittente.TabIndex = 2;
+            this.idCodiceRappresentanteFiscaleCessionarioCommittente.Location = new System.Drawing.Point(153, 46);
+            this.idCodiceRappresentanteFiscaleCessionarioCommittente.MaxLength = 28;
+            this.idCodiceRappresentanteFiscaleCessionarioCommittente.Name = "idCodiceRappresentanteFiscaleCessionarioCommittente";
+            this.idCodiceRappresentanteFiscaleCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
+            this.idCodiceRappresentanteFiscaleCessionarioCommittente.TabIndex = 1;
             // 
-            // label78
+            // label87
             // 
-            this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(9, 48);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(78, 13);
-            this.label78.TabIndex = 17;
-            this.label78.Text = "Numero civico:";
+            this.label87.AutoSize = true;
+            this.label87.Location = new System.Drawing.Point(9, 22);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(40, 13);
+            this.label87.TabIndex = 3;
+            this.label87.Text = "Paese:";
             // 
-            // numeroCivicoStabileOrganizzazioneCessionarioCommittente
+            // idPaeseRappresentanteFiscaleCessionarioCommittente
             // 
-            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 45);
-            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.MaxLength = 8;
-            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.Name = "numeroCivicoStabileOrganizzazioneCessionarioCommittente";
-            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
-            this.numeroCivicoStabileOrganizzazioneCessionarioCommittente.TabIndex = 1;
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(9, 22);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(45, 13);
-            this.label79.TabIndex = 15;
-            this.label79.Text = "Indirizzo";
-            // 
-            // indirizzoStabileOrganizzazioneCessionarioCommittente
-            // 
-            this.indirizzoStabileOrganizzazioneCessionarioCommittente.Location = new System.Drawing.Point(153, 19);
-            this.indirizzoStabileOrganizzazioneCessionarioCommittente.MaxLength = 60;
-            this.indirizzoStabileOrganizzazioneCessionarioCommittente.Name = "indirizzoStabileOrganizzazioneCessionarioCommittente";
-            this.indirizzoStabileOrganizzazioneCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
-            this.indirizzoStabileOrganizzazioneCessionarioCommittente.TabIndex = 0;
+            this.idPaeseRappresentanteFiscaleCessionarioCommittente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.idPaeseRappresentanteFiscaleCessionarioCommittente.FormattingEnabled = true;
+            this.idPaeseRappresentanteFiscaleCessionarioCommittente.Location = new System.Drawing.Point(153, 19);
+            this.idPaeseRappresentanteFiscaleCessionarioCommittente.Name = "idPaeseRappresentanteFiscaleCessionarioCommittente";
+            this.idPaeseRappresentanteFiscaleCessionarioCommittente.Size = new System.Drawing.Size(196, 21);
+            this.idPaeseRappresentanteFiscaleCessionarioCommittente.TabIndex = 0;
             // 
             // FatturaElettronicaForm
             // 
@@ -2319,6 +2449,9 @@
             this.tabCessionaioCommittenteSede.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
+            this.tabCessionarioCommittenteStabileOrganizzazione.ResumeLayout(false);
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
             this.tabTerzoIntermediario.ResumeLayout(false);
             this.tabTerzoIntermediario.PerformLayout();
             this.groupBox13.ResumeLayout(false);
@@ -2333,9 +2466,10 @@
             this.tabHeaderContainer.ResumeLayout(false);
             this.tabConvalida.ResumeLayout(false);
             this.tabConvalida.PerformLayout();
-            this.tabCessionarioCommittenteStabileOrganizzazione.ResumeLayout(false);
-            this.groupBox15.ResumeLayout(false);
-            this.groupBox15.PerformLayout();
+            this.tabCessionarioCommittenteRappresentanteFiscale.ResumeLayout(false);
+            this.tabCessionarioCommittenteRappresentanteFiscale.PerformLayout();
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2545,5 +2679,17 @@
         private System.Windows.Forms.TextBox numeroCivicoStabileOrganizzazioneCessionarioCommittente;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.TextBox indirizzoStabileOrganizzazioneCessionarioCommittente;
+        private System.Windows.Forms.TabPage tabCessionarioCommittenteRappresentanteFiscale;
+        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.TextBox idCodiceRappresentanteFiscaleCessionarioCommittente;
+        private System.Windows.Forms.Label label87;
+        public System.Windows.Forms.ComboBox idPaeseRappresentanteFiscaleCessionarioCommittente;
+        private System.Windows.Forms.TextBox denominazioneRappresentanteFiscaleCessionarioCommittente;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.TextBox nomeRappresentanteFiscaleCessionarioCommittente;
+        private System.Windows.Forms.TextBox cognomeRappresentanteFiscaleCessionarioCommittente;
+        private System.Windows.Forms.Label label84;
     }
 }
