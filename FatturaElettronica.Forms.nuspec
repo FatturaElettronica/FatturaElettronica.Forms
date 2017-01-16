@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <language>it-IT</language>
+    <licenseUrl>https://github.com/FatturaElettronica/FatturaElettronica.Forms/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/FatturaElettronica/FatturaElettronica.Forms</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>First public release.</releaseNotes>
+    <copyright>Copyright 2017 Nicola Iarocci and Gestionali Amica</copyright>
+    <tags>fattura elettronica pubblica amministrazione privati xml</tags>
+  </metadata>
+</package>
