@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FatturaElettronica.Forms</RootNamespace>
     <AssemblyName>FatturaElettronica.Forms</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -41,8 +43,8 @@
       <HintPath>packages\BusinessObjects.0.1.5\lib\portable40-net40+sl5+win8+wp8\BusinessObjects.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="FatturaElettronica, Version=0.3.3.0, Culture=neutral, PublicKeyToken=f61b7587c2e5a3b6, processorArchitecture=MSIL">
-      <HintPath>packages\FatturaElettronica.0.3.3\lib\portable40-net40+sl5+win8+wp8\FatturaElettronica.dll</HintPath>
+    <Reference Include="FatturaElettronica, Version=0.3.6.0, Culture=neutral, PublicKeyToken=f61b7587c2e5a3b6, processorArchitecture=MSIL">
+      <HintPath>packages\FatturaElettronica.0.3.6\lib\portable45-net45+win8+wp8\FatturaElettronica.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
