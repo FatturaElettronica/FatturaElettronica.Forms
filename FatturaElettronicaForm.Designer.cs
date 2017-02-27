@@ -296,7 +296,7 @@
             this.ok.TabIndex = 1;
             this.ok.Text = "&OK";
             this.ok.UseVisualStyleBackColor = true;
-            this.ok.Click += new System.EventHandler(this.ok_Click);
+            this.ok.Click += new System.EventHandler(this.Ok_Click);
             // 
             // tabHeader
             // 
@@ -405,7 +405,7 @@
             this.formatoTrasmissione.Name = "formatoTrasmissione";
             this.formatoTrasmissione.Size = new System.Drawing.Size(196, 21);
             this.formatoTrasmissione.TabIndex = 2;
-            this.formatoTrasmissione.SelectedIndexChanged += new System.EventHandler(this.formatoTrasmissione_SelectedIndexChanged);
+            this.formatoTrasmissione.SelectedIndexChanged += new System.EventHandler(this.FormatoTrasmissione_SelectedIndexChanged);
             // 
             // groupBox2
             // 
@@ -2202,7 +2202,7 @@
             // 
             // bindingSource
             // 
-            this.bindingSource.DataSource = typeof(FatturaElettronicaHeader.FatturaElettronicaHeader);
+            this.bindingSource.DataSource = typeof(FatturaElettronicaHeader.Header);
             // 
             // tabFatturaElettronica
             // 
@@ -2246,7 +2246,7 @@
             this.salvaApri.TabIndex = 1;
             this.salvaApri.Text = "&Salva lista errori";
             this.salvaApri.UseVisualStyleBackColor = true;
-            this.salvaApri.Click += new System.EventHandler(this.salvaApri_Click);
+            this.salvaApri.Click += new System.EventHandler(this.SalvaApri_Click);
             // 
             // convalida
             // 
@@ -2256,7 +2256,7 @@
             this.convalida.TabIndex = 0;
             this.convalida.Text = "&Convalida";
             this.convalida.UseVisualStyleBackColor = true;
-            this.convalida.Click += new System.EventHandler(this.convalida_Click);
+            this.convalida.Click += new System.EventHandler(this.Convalida_Click);
             // 
             // validationOutput
             // 

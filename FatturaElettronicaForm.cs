@@ -1,16 +1,17 @@
-﻿using BusinessObjects;
-using FatturaElettronica.Common;
+﻿using FatturaElettronica.Tabelle;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using BusinessObjects;
+using System.Text;
 
 namespace FatturaElettronica.Forms
 {
     public partial class FatturaElettronicaForm : Form
     {
-        FatturaElettronica _fattura;
+        Fattura _fattura;
         public FatturaElettronicaForm()
         {
             InitializeComponent();
@@ -29,15 +30,15 @@ namespace FatturaElettronica.Forms
             idPaeseTrasmittente.DisplayMember = "Description";
             idPaeseTrasmittente.ValueMember = "TwoLetterCode";
 
-            formatoTrasmissione.DataSource = FormatoTrasmissione.List.ToList();
+            formatoTrasmissione.DataSource = new FormatoTrasmissione().List.ToList();
             formatoTrasmissione.DisplayMember = "Descrizione";
             formatoTrasmissione.ValueMember = "Sigla";
 
-            provinciaAlbo.DataSource = Provincia.List.ToList();
+            provinciaAlbo.DataSource = new Provincia().List.ToList();
             provinciaAlbo.DisplayMember = "Descrizione";
             provinciaAlbo.ValueMember = "Sigla";
 
-            regimeFiscale.DataSource = RegimeFiscale.List.ToList();
+            regimeFiscale.DataSource = new RegimeFiscale().List.ToList();
             regimeFiscale.DisplayMember = "Descrizione";
             regimeFiscale.ValueMember = "Codice";
              
@@ -45,25 +46,25 @@ namespace FatturaElettronica.Forms
             idPaeseDatiAnagrafici.DataSource = Country.List.ToList();
             idPaeseDatiAnagrafici.DisplayMember = "Description";
             idPaeseDatiAnagrafici.ValueMember = "TwoLetterCode";
-            provinciaSede.DataSource = Provincia.List.ToList();
+            provinciaSede.DataSource = new Provincia().List.ToList();
             provinciaSede.DisplayMember = "Descrizione";
             provinciaSede.ValueMember = "Sigla";
             nazioneSede.DataSource = Country.List.ToList();
             nazioneSede.DisplayMember = "Description";
             nazioneSede.ValueMember = "TwoLetterCode";
-            provinciaStabileOrganizzazione.DataSource = Provincia.List.ToList();
+            provinciaStabileOrganizzazione.DataSource = new Provincia().List.ToList();
             provinciaStabileOrganizzazione.DisplayMember = "Descrizione";
             provinciaStabileOrganizzazione.ValueMember = "Sigla";
             nazioneStabileOrganizzazione.DataSource = Country.List.ToList();
             nazioneStabileOrganizzazione.DisplayMember = "Description";
             nazioneStabileOrganizzazione.ValueMember = "TwoLetterCode";
-            ufficio.DataSource = Provincia.List.ToList();
+            ufficio.DataSource = new Provincia().List.ToList();
             ufficio.DisplayMember = "Descrizione";
             ufficio.ValueMember = "Sigla";
-            socioUnico.DataSource = SocioUnico.List.ToList();
+            socioUnico.DataSource = new SocioUnico().List.ToList();
             socioUnico.DisplayMember = "Descrizione";
             socioUnico.ValueMember = "Codice";
-            statoLiquidazione.DataSource = StatoLiquidazione.List.ToList();
+            statoLiquidazione.DataSource = new StatoLiquidazione().List.ToList();
             statoLiquidazione.DisplayMember = "Descrizione";
             statoLiquidazione.ValueMember = "Codice";
 
@@ -79,10 +80,10 @@ namespace FatturaElettronica.Forms
             nazioneCessionarioCommittente.DataSource = Country.List.ToList();
             nazioneCessionarioCommittente.DisplayMember = "Description";
             nazioneCessionarioCommittente.ValueMember = "TwoLetterCode";
-            provinciaCessionarioCommittente.DataSource = Provincia.List.ToList();
+            provinciaCessionarioCommittente.DataSource = new Provincia().List.ToList();
             provinciaCessionarioCommittente.DisplayMember = "Descrizione";
             provinciaCessionarioCommittente.ValueMember = "Sigla";
-            provinciaStabileOrganizzazioneCessionarioCommittente.DataSource = Provincia.List.ToList();
+            provinciaStabileOrganizzazioneCessionarioCommittente.DataSource = new Provincia().List.ToList();
             provinciaStabileOrganizzazioneCessionarioCommittente.DisplayMember = "Descrizione";
             provinciaStabileOrganizzazioneCessionarioCommittente.ValueMember = "Sigla";
             nazioneStabileOrganizzazioneCessionarioCommittente.DataSource = Country.List.ToList();
@@ -98,7 +99,7 @@ namespace FatturaElettronica.Forms
             idPaeseTerzoIntermediario.ValueMember = "TwoLetterCode";
 
             // SoggettoEmittente
-            soggettoEmittente.DataSource = SoggettoEmittente.List.ToList();
+            soggettoEmittente.DataSource = new SoggettoEmittente().List.ToList();
             soggettoEmittente.DisplayMember = "Description";
             soggettoEmittente.ValueMember = "Codice";
         }
@@ -269,7 +270,7 @@ namespace FatturaElettronica.Forms
             control.DataBindings.Add(propertyName, bindingSource, dataMember, formattingEnabled, DataSourceUpdateMode.OnPropertyChanged);
         }
 
-        public FatturaElettronica FatturaElettronica {
+        public Fattura FatturaElettronica {
             get { return _fattura;}
             set {
                 _fattura = value;
@@ -279,22 +280,27 @@ namespace FatturaElettronica.Forms
 
         private bool ConvalidaForm() {
             // IsValid() would invoke Error() so we use the latter for convenience.
-            var s = FatturaElettronica.Error;
-            if (string.IsNullOrEmpty(s)){
+            var result = _fattura.Validate();
+            if (result.IsValid){
                 validationOutput.Text="Nessun errore risconrtato.";
                 salvaApri.Enabled = false;
                 return true;
             }
-            validationOutput.Text = s.Replace("FatturaElettronicaHeader.", "");
+            var errors = new StringBuilder();
+            foreach (var err in result.Errors)
+            {
+                errors.AppendLine(string.Format("{0}: {1}", err.PropertyName, err.ErrorMessage));
+            }
+            validationOutput.Text = errors.ToString();
             salvaApri.Enabled = true;
             return false;
         }
-        private void convalida_Click(object sender, EventArgs e) {
+        private void Convalida_Click(object sender, EventArgs e) {
             if (ConvalidaForm()) {
                 salvaApri.Focus();
             }
         }
-        private void ok_Click(object sender, EventArgs e)
+        private void Ok_Click(object sender, EventArgs e)
         {
             if (!ConvalidaForm()) {
                 MessageBox.Show(this, "Ci sono errori di convalida.", "Convalida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -305,7 +311,7 @@ namespace FatturaElettronica.Forms
             }
         }
 
-        private void salvaApri_Click(object sender, EventArgs e)
+        private void SalvaApri_Click(object sender, EventArgs e)
         {
             const string filename = "convalida.txt";
             using (var f = new StreamWriter(filename, false)) {
@@ -314,7 +320,7 @@ namespace FatturaElettronica.Forms
             Process.Start(filename);
         }
 
-        private void formatoTrasmissione_SelectedIndexChanged(object sender, EventArgs e)
+        private void FormatoTrasmissione_SelectedIndexChanged(object sender, EventArgs e)
         {
             if ((string)formatoTrasmissione.SelectedValue == Impostazioni.FormatoTrasmissione.Privati)
             {
