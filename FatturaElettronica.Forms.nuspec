@@ -9,6 +9,7 @@
     <language>it-IT</language>
     <licenseUrl>https://github.com/FatturaElettronica/FatturaElettronica.Forms/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/FatturaElettronica/FatturaElettronica.Forms</projectUrl>
+    <iconUrl>https://github.com/FatturaElettronica/FatturaElettronica.NET/raw/master/Artwork/FatturaElettronica64x64.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>First public release.</releaseNotes>

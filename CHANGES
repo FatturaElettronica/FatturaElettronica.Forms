@@ -1,12 +1,13 @@
 Changelog
 =========
 
-v0.4.0
+v0.4.1
 ======
 
 Non ancora rilasciata
 
-- Upgrade to FatturaElettronica v0.4.0.
+- Aggiorna dipendenza a FatturaElettronica v0.4.1.
+- Rimossa dipendenza a BusinessObjects.
 
 v0.2.2
 ======

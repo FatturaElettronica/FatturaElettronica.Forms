@@ -39,12 +39,8 @@
     <AssemblyOriginatorKeyFile>FatturaElettronica.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BusinessObjects, Version=0.1.5.0, Culture=neutral, PublicKeyToken=ee01fa0baf555a0d, processorArchitecture=MSIL">
-      <HintPath>packages\BusinessObjects.0.1.5\lib\portable40-net40+sl5+win8+wp8\BusinessObjects.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="FatturaElettronica, Version=0.4.0.0, Culture=neutral, PublicKeyToken=f61b7587c2e5a3b6, processorArchitecture=MSIL">
-      <HintPath>packages\FatturaElettronica.0.4.0\lib\portable45-net45+win8+wp8\FatturaElettronica.dll</HintPath>
+    <Reference Include="FatturaElettronica, Version=0.4.1.0, Culture=neutral, PublicKeyToken=f61b7587c2e5a3b6, processorArchitecture=MSIL">
+      <HintPath>packages\FatturaElettronica.0.4.1\lib\portable45-net45+win8+wp8\FatturaElettronica.dll</HintPath>
     </Reference>
     <Reference Include="FluentValidation, Version=6.2.1.0, Culture=neutral, PublicKeyToken=a82054b837897c66, processorArchitecture=MSIL">
       <HintPath>packages\FluentValidation-Signed.6.2.1.0\lib\Net45\FluentValidation.dll</HintPath>

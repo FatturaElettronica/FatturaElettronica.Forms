@@ -4,8 +4,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using BusinessObjects;
-using System.Text;
 using FluentValidation.Results;
 
 namespace FatturaElettronica.Forms
@@ -29,9 +27,9 @@ namespace FatturaElettronica.Forms
             salvaApri.Enabled = false;
 
             // DatiTrasmissione
-            idPaeseTrasmittente.DisplayMember = "Description";
-            idPaeseTrasmittente.ValueMember = "TwoLetterCode";
-            idPaeseTrasmittente.DataSource = Country.List.ToList();
+            idPaeseTrasmittente.DisplayMember = "Descrizione";
+            idPaeseTrasmittente.ValueMember = "Codice";
+            idPaeseTrasmittente.DataSource = new IdPaese().List.ToList();
 
             formatoTrasmissione.DisplayMember = "Descrizione";
             formatoTrasmissione.ValueMember = "Codice";
@@ -46,21 +44,21 @@ namespace FatturaElettronica.Forms
             regimeFiscale.DataSource = new RegimeFiscale().List.ToList();
              
             // CedentePrestatore
-            idPaeseDatiAnagrafici.DisplayMember = "Description";
-            idPaeseDatiAnagrafici.ValueMember = "TwoLetterCode";
-            idPaeseDatiAnagrafici.DataSource = Country.List.ToList();
+            idPaeseDatiAnagrafici.DisplayMember = "Descrizione";
+            idPaeseDatiAnagrafici.ValueMember = "Codice";
+            idPaeseDatiAnagrafici.DataSource = new IdPaese().List.ToList();
             provinciaSede.DisplayMember = "Descrizione";
             provinciaSede.ValueMember = "Codice";
             provinciaSede.DataSource = new Provincia().List.ToList();
-            nazioneSede.DisplayMember = "Description";
-            nazioneSede.ValueMember = "TwoLetterCode";
-            nazioneSede.DataSource = Country.List.ToList();
+            nazioneSede.DisplayMember = "Descrizione";
+            nazioneSede.ValueMember = "Codice";
+            nazioneSede.DataSource = new IdPaese().List.ToList();
             provinciaStabileOrganizzazione.DisplayMember = "Descrizione";
             provinciaStabileOrganizzazione.ValueMember = "Codice";
             provinciaStabileOrganizzazione.DataSource = new Provincia().List.ToList();
-            nazioneStabileOrganizzazione.DisplayMember = "Description";
-            nazioneStabileOrganizzazione.ValueMember = "TwoLetterCode";
-            nazioneStabileOrganizzazione.DataSource = Country.List.ToList();
+            nazioneStabileOrganizzazione.DisplayMember = "Descrizione";
+            nazioneStabileOrganizzazione.ValueMember = "Codice";
+            nazioneStabileOrganizzazione.DataSource = new IdPaese().List.ToList();
             ufficio.DisplayMember = "Descrizione";
             ufficio.ValueMember = "Codice";
             ufficio.DataSource = new Provincia().List.ToList();
@@ -72,37 +70,37 @@ namespace FatturaElettronica.Forms
             statoLiquidazione.DataSource = new StatoLiquidazione().List.ToList();
 
             // RappresentanteFiscale
-            idPaeseRappresentanteFiscale.DisplayMember = "Description";
-            idPaeseRappresentanteFiscale.ValueMember = "TwoLetterCode";
-            idPaeseRappresentanteFiscale.DataSource = Country.List.ToList();
+            idPaeseRappresentanteFiscale.DisplayMember = "Descrizione";
+            idPaeseRappresentanteFiscale.ValueMember = "Codice";
+            idPaeseRappresentanteFiscale.DataSource = new IdPaese().List.ToList();
 
             // CessionarioCommittente
-            idPaeseCessionarioCommittente.DisplayMember = "Description";
-            idPaeseCessionarioCommittente.ValueMember = "TwoLetterCode";
-            idPaeseCessionarioCommittente.DataSource = Country.List.ToList();
-            nazioneCessionarioCommittente.DisplayMember = "Description";
-            nazioneCessionarioCommittente.ValueMember = "TwoLetterCode";
-            nazioneCessionarioCommittente.DataSource = Country.List.ToList();
+            idPaeseCessionarioCommittente.DisplayMember = "Descrizione";
+            idPaeseCessionarioCommittente.ValueMember = "Codice";
+            idPaeseCessionarioCommittente.DataSource = new IdPaese().List.ToList();
+            nazioneCessionarioCommittente.DisplayMember = "Descrizione";
+            nazioneCessionarioCommittente.ValueMember = "Codice";
+            nazioneCessionarioCommittente.DataSource = new IdPaese().List.ToList();
             provinciaCessionarioCommittente.DisplayMember = "Descrizione";
             provinciaCessionarioCommittente.ValueMember = "Codice";
             provinciaCessionarioCommittente.DataSource = new Provincia().List.ToList();
             provinciaStabileOrganizzazioneCessionarioCommittente.DisplayMember = "Descrizione";
             provinciaStabileOrganizzazioneCessionarioCommittente.ValueMember = "Codice";
             provinciaStabileOrganizzazioneCessionarioCommittente.DataSource = new Provincia().List.ToList();
-            nazioneStabileOrganizzazioneCessionarioCommittente.DisplayMember = "Description";
-            nazioneStabileOrganizzazioneCessionarioCommittente.ValueMember = "TwoLetterCode";
-            nazioneStabileOrganizzazioneCessionarioCommittente.DataSource = Country.List.ToList();
-            idPaeseRappresentanteFiscaleCessionarioCommittente.DisplayMember = "Description";
-            idPaeseRappresentanteFiscaleCessionarioCommittente.ValueMember = "TwoLetterCode";
-            idPaeseRappresentanteFiscaleCessionarioCommittente.DataSource = Country.List.ToList();
+            nazioneStabileOrganizzazioneCessionarioCommittente.DisplayMember = "Descrizione";
+            nazioneStabileOrganizzazioneCessionarioCommittente.ValueMember = "Codice";
+            nazioneStabileOrganizzazioneCessionarioCommittente.DataSource = new IdPaese().List.ToList();
+            idPaeseRappresentanteFiscaleCessionarioCommittente.DisplayMember = "Descrizione";
+            idPaeseRappresentanteFiscaleCessionarioCommittente.ValueMember = "Codice";
+            idPaeseRappresentanteFiscaleCessionarioCommittente.DataSource = new IdPaese().List.ToList();
 
             // TerzoIntermediario
-            idPaeseTerzoIntermediario.DisplayMember = "Description";
-            idPaeseTerzoIntermediario.ValueMember = "TwoLetterCode";
-            idPaeseTerzoIntermediario.DataSource = Country.List.ToList();
+            idPaeseTerzoIntermediario.DisplayMember = "Descrizione";
+            idPaeseTerzoIntermediario.ValueMember = "Codice";
+            idPaeseTerzoIntermediario.DataSource = new IdPaese().List.ToList();
 
             // SoggettoEmittente
-            soggettoEmittente.DisplayMember = "Description";
+            soggettoEmittente.DisplayMember = "Descrizione";
             soggettoEmittente.ValueMember = "Codice";
             soggettoEmittente.DataSource = new SoggettoEmittente().List.ToList();
         }
