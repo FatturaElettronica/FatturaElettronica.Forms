@@ -1,10 +1,17 @@
 Changelog
 =========
 
+v0.4.2
+======
+
+Rilasciata il 17.3.2017.
+
+- Aggiorna dipendenza a FatturaElettronica v0.4.2.
+
 v0.4.1
 ======
 
-Non ancora rilasciata
+Rilasciata il 14.3.2017.
 
 - Aggiorna dipendenza a FatturaElettronica v0.4.1.
 - Rimossa dipendenza a BusinessObjects.
