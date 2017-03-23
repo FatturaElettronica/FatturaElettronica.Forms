@@ -31,8 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FatturaElettronica, Version=0.4.2.0, Culture=neutral, PublicKeyToken=f61b7587c2e5a3b6, processorArchitecture=MSIL">
-      <HintPath>..\packages\FatturaElettronica.0.4.2\lib\portable45-net45+win8+wp8\FatturaElettronica.dll</HintPath>
+    <Reference Include="FatturaElettronica, Version=0.4.3.0, Culture=neutral, PublicKeyToken=f61b7587c2e5a3b6, processorArchitecture=MSIL">
+      <HintPath>..\packages\FatturaElettronica.0.4.3\lib\portable45-net45+win8+wp8\FatturaElettronica.dll</HintPath>
     </Reference>
     <Reference Include="FluentValidation, Version=6.2.1.0, Culture=neutral, PublicKeyToken=a82054b837897c66, processorArchitecture=MSIL">
       <HintPath>..\packages\FluentValidation-Signed.6.2.1.0\lib\Net45\FluentValidation.dll</HintPath>
