@@ -77,7 +77,9 @@ namespace FatturaElettronica.Forms
             // CessionarioCommittente
             idPaeseCessionarioCommittente.DisplayMember = "Descrizione";
             idPaeseCessionarioCommittente.ValueMember = "Codice";
-            idPaeseCessionarioCommittente.DataSource = new IdPaese().List.ToList();
+            var paesi = new IdPaese().List.ToList();
+            paesi.Insert(0, new IdPaese() { Nome = string.Empty, Codice = string.Empty });
+            idPaeseCessionarioCommittente.DataSource = paesi;
             nazioneCessionarioCommittente.DisplayMember = "Descrizione";
             nazioneCessionarioCommittente.ValueMember = "Codice";
             nazioneCessionarioCommittente.DataSource = new IdPaese().List.ToList();
@@ -340,6 +342,14 @@ namespace FatturaElettronica.Forms
                 codiceDestinatario.MaxLength = 6;
                 codiceDestinatario.Text = string.Empty;
                 PECDestinatario.Text = string.Empty;
+            }
+        }
+
+        private void idCodiceCessionarioCommittente_TextChanged(object sender, EventArgs e)
+        {
+            if (idCodiceCessionarioCommittente.Text == string.Empty)
+            {
+                idPaeseCessionarioCommittente.SelectedValue = string.Empty;
             }
         }
     }

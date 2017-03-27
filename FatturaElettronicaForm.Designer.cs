@@ -241,13 +241,13 @@
             this.tabFatturaElettronica = new System.Windows.Forms.TabControl();
             this.tabHeaderContainer = new System.Windows.Forms.TabPage();
             this.tabConvalida = new System.Windows.Forms.TabPage();
-            this.salvaApri = new System.Windows.Forms.Button();
-            this.convalida = new System.Windows.Forms.Button();
+            this.lblErrori = new System.Windows.Forms.Label();
             this.errori = new System.Windows.Forms.ListView();
             this.Proprietà = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Messaggio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Codice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lblErrori = new System.Windows.Forms.Label();
+            this.salvaApri = new System.Windows.Forms.Button();
+            this.convalida = new System.Windows.Forms.Button();
             this.tabHeader.SuspendLayout();
             this.tabDatiTrasmissione.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -1682,6 +1682,7 @@
             this.idCodiceCessionarioCommittente.Name = "idCodiceCessionarioCommittente";
             this.idCodiceCessionarioCommittente.Size = new System.Drawing.Size(196, 20);
             this.idCodiceCessionarioCommittente.TabIndex = 1;
+            this.idCodiceCessionarioCommittente.TextChanged += new System.EventHandler(this.idCodiceCessionarioCommittente_TextChanged);
             // 
             // label57
             // 
@@ -2366,25 +2367,14 @@
             this.tabConvalida.Text = "Convalida";
             this.tabConvalida.UseVisualStyleBackColor = true;
             // 
-            // salvaApri
+            // lblErrori
             // 
-            this.salvaApri.Location = new System.Drawing.Point(655, 324);
-            this.salvaApri.Name = "salvaApri";
-            this.salvaApri.Size = new System.Drawing.Size(99, 23);
-            this.salvaApri.TabIndex = 2;
-            this.salvaApri.Text = "&Salva lista errori";
-            this.salvaApri.UseVisualStyleBackColor = true;
-            this.salvaApri.Click += new System.EventHandler(this.SalvaApri_Click);
-            // 
-            // convalida
-            // 
-            this.convalida.Location = new System.Drawing.Point(8, 6);
-            this.convalida.Name = "convalida";
-            this.convalida.Size = new System.Drawing.Size(75, 23);
-            this.convalida.TabIndex = 0;
-            this.convalida.Text = "&Convalida";
-            this.convalida.UseVisualStyleBackColor = true;
-            this.convalida.Click += new System.EventHandler(this.Convalida_Click);
+            this.lblErrori.AutoSize = true;
+            this.lblErrori.Location = new System.Drawing.Point(89, 11);
+            this.lblErrori.Name = "lblErrori";
+            this.lblErrori.Size = new System.Drawing.Size(249, 13);
+            this.lblErrori.TabIndex = 4;
+            this.lblErrori.Text = "Premi Convalida per convalidare i dati da esportare.";
             // 
             // errori
             // 
@@ -2419,14 +2409,25 @@
             // 
             this.Codice.Text = "Codice";
             // 
-            // lblErrori
+            // salvaApri
             // 
-            this.lblErrori.AutoSize = true;
-            this.lblErrori.Location = new System.Drawing.Point(89, 11);
-            this.lblErrori.Name = "lblErrori";
-            this.lblErrori.Size = new System.Drawing.Size(249, 13);
-            this.lblErrori.TabIndex = 4;
-            this.lblErrori.Text = "Premi Convalida per convalidare i dati da esportare.";
+            this.salvaApri.Location = new System.Drawing.Point(655, 324);
+            this.salvaApri.Name = "salvaApri";
+            this.salvaApri.Size = new System.Drawing.Size(99, 23);
+            this.salvaApri.TabIndex = 2;
+            this.salvaApri.Text = "&Salva lista errori";
+            this.salvaApri.UseVisualStyleBackColor = true;
+            this.salvaApri.Click += new System.EventHandler(this.SalvaApri_Click);
+            // 
+            // convalida
+            // 
+            this.convalida.Location = new System.Drawing.Point(8, 6);
+            this.convalida.Name = "convalida";
+            this.convalida.Size = new System.Drawing.Size(75, 23);
+            this.convalida.TabIndex = 0;
+            this.convalida.Text = "&Convalida";
+            this.convalida.UseVisualStyleBackColor = true;
+            this.convalida.Click += new System.EventHandler(this.Convalida_Click);
             // 
             // FatturaElettronicaForm
             // 

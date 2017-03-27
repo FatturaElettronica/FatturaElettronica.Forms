@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v0.5.0
+======
+
+Non ancora rilasciata.
+
+- Aggiorna dipendenza a FatturaElettronica v0.5.0.
+- CessionarioCommittente.IdFiscale: quando PartitaIVA è vuota, IdPaese viene svuotato.
+
 v0.4.3
 ======
 
