@@ -33,14 +33,15 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>FatturaElettronica.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FatturaElettronica, Version=0.5.0.0, Culture=neutral, PublicKeyToken=f61b7587c2e5a3b6, processorArchitecture=MSIL">
-      <HintPath>packages\FatturaElettronica.0.5.0\lib\portable45-net45+win8+wp8\FatturaElettronica.dll</HintPath>
+    <Reference Include="FatturaElettronica, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FatturaElettronica.0.6.0\lib\portable45-net45+win8+wp8\FatturaElettronica.dll</HintPath>
     </Reference>
     <Reference Include="FluentValidation, Version=6.2.1.0, Culture=neutral, PublicKeyToken=a82054b837897c66, processorArchitecture=MSIL">
       <HintPath>packages\FluentValidation-Signed.6.2.1.0\lib\Net45\FluentValidation.dll</HintPath>
@@ -74,8 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="FatturaElettronica.snk" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\DataSources\FatturaElettronica.FatturaElettronicaHeader.FatturaElettronicaHeader.datasource" />
     <None Include="Properties\DataSources\FatturaElettronicaPA.PCL.FatturaElettronicaHeader.FatturaElettronicaHeader.datasource" />
   </ItemGroup>
