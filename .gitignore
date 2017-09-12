@@ -158,3 +158,4 @@ $RECYCLE.BIN/
 # packages folder
 packages
 !packages/respositories.config
+.vs/
