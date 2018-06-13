@@ -342,7 +342,7 @@
             // 
             // PECDestinatario
             // 
-            this.PECDestinatario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.PECDestinatario.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.PECDestinatario.Location = new System.Drawing.Point(161, 179);
             this.PECDestinatario.MaxLength = 256;
             this.PECDestinatario.Name = "PECDestinatario";
