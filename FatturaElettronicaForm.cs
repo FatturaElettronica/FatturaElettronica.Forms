@@ -332,10 +332,15 @@ namespace FatturaElettronica.Forms
 
         private void FormatoTrasmissione_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (_fattura == null) return;
+
             if ((string)formatoTrasmissione.SelectedValue == Impostazioni.FormatoTrasmissione.Privati)
             {
                 codiceDestinatario.MaxLength = 7;
-                codiceDestinatario.Text = "0000000";
+                if (string.IsNullOrEmpty(codiceDestinatario.Text))
+                {
+                    codiceDestinatario.Text = "0000000";
+                }
             }
             else
             {
