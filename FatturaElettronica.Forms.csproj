@@ -40,8 +40,8 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FatturaElettronica, Version=0.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\FatturaElettronica.0.7.0\lib\netstandard1.1\FatturaElettronica.dll</HintPath>
+    <Reference Include="FatturaElettronica, Version=0.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FatturaElettronica.0.8.0\lib\netstandard1.1\FatturaElettronica.dll</HintPath>
     </Reference>
     <Reference Include="FatturaElettronica.Core, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\FatturaElettronica.Core.0.1.0\lib\netstandard1.1\FatturaElettronica.Core.dll</HintPath>
