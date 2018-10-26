@@ -159,3 +159,4 @@ $RECYCLE.BIN/
 packages
 !packages/respositories.config
 .vs/
+*.nupkg
