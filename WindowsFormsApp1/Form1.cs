@@ -23,8 +23,8 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             var f = Fattura.CreateInstance(Instance.Privati);
-            f.Header.DatiTrasmissione.CodiceDestinatario = "1234567";
-            f.Header.DatiTrasmissione.PECDestinatario = "pec";
+            f.FatturaElettronicaHeader.DatiTrasmissione.CodiceDestinatario = "1234567";
+            f.FatturaElettronicaHeader.DatiTrasmissione.PECDestinatario = "pec";
             var form = new FatturaElettronicaForm();
             form.FatturaElettronica = f;
             form.ShowDialog();

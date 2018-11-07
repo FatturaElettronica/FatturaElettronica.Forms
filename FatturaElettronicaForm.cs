@@ -108,7 +108,7 @@ namespace FatturaElettronica.Forms
         }
         private void InitializeHeaderDataBindings() {
 
-            const string root = "Header.";
+            const string root = "FatturaElettronicaHeader.";
 
             // DatiTrasmissione
             var parent = root + "DatiTrasmissione.";
@@ -291,7 +291,7 @@ namespace FatturaElettronica.Forms
             }
             foreach (var err in _result.Errors)
             {
-                var item = new ListViewItem(err.PropertyName.Replace("Header.", ""));
+                var item = new ListViewItem(err.PropertyName.Replace("FatturaElettronicaHeader.", ""));
                 item.SubItems.Add(err.ErrorMessage);
                 item.SubItems.Add(err.ErrorCode);
                 errori.Items.Add(item);
@@ -325,7 +325,7 @@ namespace FatturaElettronica.Forms
             using (var f = new StreamWriter(filename, false)) {
                 f.WriteLine("Proprietà, Codice, Messaggio");
                 foreach (var err in _result.Errors)
-                    f.WriteLine($"{err.PropertyName.Replace("Header.", "")}, {err.ErrorCode}, {err.ErrorMessage}");
+                    f.WriteLine($"{err.PropertyName.Replace("FatturaElettronicaHeader.", "")}, {err.ErrorCode}, {err.ErrorMessage}");
             }
             Process.Start(filename);
         }
