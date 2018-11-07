@@ -334,7 +334,7 @@ namespace FatturaElettronica.Forms
         {
             if (_fattura == null) return;
 
-            if ((string)formatoTrasmissione.SelectedValue == Impostazioni.FormatoTrasmissione.Privati)
+            if ((string)formatoTrasmissione.SelectedValue == Defaults.FormatoTrasmissione.Privati)
             {
                 codiceDestinatario.MaxLength = 7;
                 if (string.IsNullOrEmpty(codiceDestinatario.Text))

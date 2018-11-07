@@ -1,6 +1,6 @@
 ﻿using System;
 using FatturaElettronica;
-using FatturaElettronica.Impostazioni;
+using FatturaElettronica.Defaults;
 using FatturaElettronica.Forms;
 using System.Collections.Generic;
 using System.ComponentModel;
