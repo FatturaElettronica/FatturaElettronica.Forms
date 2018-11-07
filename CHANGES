@@ -5,7 +5,16 @@ v0.10
 =====
 
 - BREAKING: Target Framework passa da 4.5 a 4.6.1.
-- Aggiorna dipendenza a FatturaElettronica v0.10
+
+- Bump FatturaElettronica to v0.10
+- Bump FatturaElettronica.Core to 0.5.0
+- Bump System.Xml.ReaderWriter to 4.3.1
+- Bump NETStandard.Library to 2.0.3
+- Bump System.Net.Http to 4.3.4
+- Bump System.ComponentModel.Annotations to 4.5.0
+- Bump Microsoft.NETCore.Platforms to 2.1.1
+- Bump Newtonsoft.Json to 11.0.2
+
 
 v0.9
 ====
