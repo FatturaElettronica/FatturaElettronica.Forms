@@ -6,8 +6,8 @@ v0.10
 
 - BREAKING: Target Framework passa da 4.5 a 4.6.1.
 
-- Bump FatturaElettronica to v0.10
-- Bump FatturaElettronica.Core to 0.5.0
+- Bump FatturaElettronica to v1.0.1
+- Bump FatturaElettronica.Core to 1.0
 - Bump System.Xml.ReaderWriter to 4.3.1
 - Bump NETStandard.Library to 2.0.3
 - Bump System.Net.Http to 4.3.4
