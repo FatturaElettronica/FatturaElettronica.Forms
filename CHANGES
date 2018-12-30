@@ -1,6 +1,13 @@
 Changelog
 =========
 
+v1.0.1
+=======
+
+Released on November 9, 2018.
+
+- Drop System.Net.Http dependency.
+
 v1.0
 ====
 
