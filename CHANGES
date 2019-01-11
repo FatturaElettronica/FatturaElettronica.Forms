@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v1.1
+====
+
+Released on January 11, 2018.
+
+- Bump FatturaElettronica to v1.1
+- Drop references in favor of actual nuget packages.
+
 v1.0.1
 =======
 

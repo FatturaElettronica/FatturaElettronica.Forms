@@ -1,10 +1,10 @@
-﻿using FatturaElettronica.Tabelle;
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using FluentValidation.Results;
+using FatturaElettronica.Tabelle;
 
 namespace FatturaElettronica.Forms
 {
@@ -78,7 +78,7 @@ namespace FatturaElettronica.Forms
             idPaeseCessionarioCommittente.DisplayMember = "Descrizione";
             idPaeseCessionarioCommittente.ValueMember = "Codice";
             var paesi = new IdPaese().List.ToList();
-            paesi.Insert(0, new IdPaese() { Nome = string.Empty, Codice = string.Empty });
+            paesi.Insert(0, new IdPaese() { Nome = string.Empty});
             idPaeseCessionarioCommittente.DataSource = paesi;
             nazioneCessionarioCommittente.DisplayMember = "Descrizione";
             nazioneCessionarioCommittente.ValueMember = "Codice";

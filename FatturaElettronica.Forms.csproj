@@ -40,6 +40,12 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FatturaElettronica, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FatturaElettronica.1.1.0\lib\netstandard2.0\FatturaElettronica.dll</HintPath>
+    </Reference>
+    <Reference Include="FatturaElettronica.Core, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FatturaElettronica.Core.1.1.0\lib\netstandard2.0\FatturaElettronica.Core.dll</HintPath>
+    </Reference>
     <Reference Include="FluentValidation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
       <HintPath>packages\FluentValidation.8.0.100\lib\net45\FluentValidation.dll</HintPath>
     </Reference>
@@ -91,16 +97,6 @@
     </None>
     <None Include="Properties\DataSources\FatturaElettronica.FatturaElettronicaHeader.FatturaElettronicaHeader.datasource" />
     <None Include="Properties\DataSources\FatturaElettronicaPA.PCL.FatturaElettronicaHeader.FatturaElettronicaHeader.datasource" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FatturaElettronica.Core\FatturaElettronica.Core.csproj">
-      <Project>{aa14e1d2-b62d-4383-9fe1-018276a5bb59}</Project>
-      <Name>FatturaElettronica.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FatturaElettronica\FatturaElettronica.csproj">
-      <Project>{044b5402-7a7b-453c-bc0c-40f667bf226e}</Project>
-      <Name>FatturaElettronica</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
