@@ -1,6 +1,8 @@
 Changelog
 =========
 
+- Fix: Codice identificativo fiscale deve essere uppercase. Closes #24.
+
 v1.3
 ====
 
