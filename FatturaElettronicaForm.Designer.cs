@@ -2328,7 +2328,7 @@
             // 
             // bindingSource
             // 
-            this.bindingSource.DataSource = typeof(FatturaElettronica.FatturaElettronicaHeader.FatturaElettronicaHeader);
+            this.bindingSource.DataSource = typeof(FatturaElettronica.Ordinaria.FatturaElettronicaHeader.FatturaElettronicaHeader);
             // 
             // tabFatturaElettronica
             // 

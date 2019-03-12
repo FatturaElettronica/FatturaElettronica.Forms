@@ -1,15 +1,8 @@
 ﻿using System;
-using FatturaElettronica;
 using FatturaElettronica.Defaults;
 using FatturaElettronica.Forms;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using FatturaElettronica.Ordinaria;
 
 namespace WindowsFormsApp1
 {
@@ -22,7 +15,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var f = Fattura.CreateInstance(Instance.Privati);
+            var f = FatturaOrdinaria.CreateInstance(Instance.Privati);
             f.FatturaElettronicaHeader.DatiTrasmissione.CodiceDestinatario = "1234567";
             f.FatturaElettronicaHeader.DatiTrasmissione.PECDestinatario = "pec";
             var form = new FatturaElettronicaForm();

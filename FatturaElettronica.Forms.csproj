@@ -40,17 +40,17 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FatturaElettronica, Version=1.1.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\FatturaElettronica.1.1.5\lib\netstandard2.0\FatturaElettronica.dll</HintPath>
+    <Reference Include="FatturaElettronica, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FatturaElettronica.2.0.0\lib\netstandard2.0\FatturaElettronica.dll</HintPath>
     </Reference>
-    <Reference Include="FatturaElettronica.Core, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\FatturaElettronica.Core.1.1.1\lib\netstandard2.0\FatturaElettronica.Core.dll</HintPath>
+    <Reference Include="FatturaElettronica.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FatturaElettronica.Core.2.0.0\lib\netstandard2.0\FatturaElettronica.Core.dll</HintPath>
     </Reference>
     <Reference Include="FluentValidation, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
       <HintPath>packages\FluentValidation.8.0.100\lib\net45\FluentValidation.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
@@ -91,7 +91,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

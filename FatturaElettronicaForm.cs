@@ -5,12 +5,13 @@ using System.Linq;
 using System.Windows.Forms;
 using FluentValidation.Results;
 using FatturaElettronica.Tabelle;
+using FatturaElettronica.Ordinaria;
 
 namespace FatturaElettronica.Forms
 {
     public partial class FatturaElettronicaForm : Form
     {
-        Fattura _fattura;
+        FatturaOrdinaria _fattura;
         ValidationResult _result;
 
         public FatturaElettronicaForm()
@@ -273,7 +274,7 @@ namespace FatturaElettronica.Forms
             control.DataBindings.Add(propertyName, bindingSource, dataMember, formattingEnabled, DataSourceUpdateMode.OnPropertyChanged);
         }
 
-        public Fattura FatturaElettronica {
+        public FatturaOrdinaria FatturaElettronica {
             get { return _fattura;}
             set {
                 _fattura = value;
