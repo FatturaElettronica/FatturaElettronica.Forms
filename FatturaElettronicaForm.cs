@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using FluentValidation.Results;
 using FatturaElettronica.Tabelle;
 using FatturaElettronica.Ordinaria;
+using FatturaElettronica.Extensions;
 
 namespace FatturaElettronica.Forms
 {
