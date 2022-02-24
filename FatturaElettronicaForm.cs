@@ -21,8 +21,6 @@ namespace FatturaElettronica.Forms
 
             InitializeControls();
             InitializeHeaderDataBindings();
-
-
         }
         private void InitializeControls() {
 
@@ -74,14 +72,12 @@ namespace FatturaElettronica.Forms
             // RappresentanteFiscale
             idPaeseRappresentanteFiscale.DisplayMember = "Descrizione";
             idPaeseRappresentanteFiscale.ValueMember = "Codice";
-            idPaeseRappresentanteFiscale.DataSource = new IdPaese().List.ToList();
+            idPaeseRappresentanteFiscale.DataSource = new IdPaeseNullable().List.ToList();
 
             // CessionarioCommittente
             idPaeseCessionarioCommittente.DisplayMember = "Descrizione";
             idPaeseCessionarioCommittente.ValueMember = "Codice";
-            var paesi = new IdPaese().List.ToList();
-            paesi.Insert(0, new IdPaese() { Nome = string.Empty});
-            idPaeseCessionarioCommittente.DataSource = paesi;
+            idPaeseCessionarioCommittente.DataSource = new IdPaeseNullable().List.ToList();
             nazioneCessionarioCommittente.DisplayMember = "Descrizione";
             nazioneCessionarioCommittente.ValueMember = "Codice";
             nazioneCessionarioCommittente.DataSource = new IdPaese().List.ToList();
@@ -101,7 +97,7 @@ namespace FatturaElettronica.Forms
             // TerzoIntermediario
             idPaeseTerzoIntermediario.DisplayMember = "Descrizione";
             idPaeseTerzoIntermediario.ValueMember = "Codice";
-            idPaeseTerzoIntermediario.DataSource = new IdPaese().List.ToList();
+            idPaeseTerzoIntermediario.DataSource = new IdPaeseNullable().List.ToList();
 
             // SoggettoEmittente
             soggettoEmittente.DisplayMember = "Descrizione";

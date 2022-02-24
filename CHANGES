@@ -1,10 +1,13 @@
 Changelog
 =========
 
+- Fix: RappresentanteFiscale.IdPaese deve avere opzione 'nessuno'.
+- Fix: TerzoIntermediario.IdPaese deve avere opzione 'nessuno'.
+
 v3.2.0
 ======
 
-Released on February 1, 202.
+Released on February 1, 2022.
 
 - Bump FatturaElettronica to v3.2.0
 

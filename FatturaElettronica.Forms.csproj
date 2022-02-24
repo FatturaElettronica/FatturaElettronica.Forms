@@ -87,6 +87,7 @@
     <Compile Include="FatturaElettronicaForm.Designer.cs">
       <DependentUpon>FatturaElettronicaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="IdPaeseNullable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
