@@ -1,6 +1,11 @@
 Changelog
 =========
 
+v3.2.1
+======
+
+Released on February 24, 2022.
+
 - Fix: RappresentanteFiscale.IdPaese deve avere opzione 'nessuno'.
 - Fix: TerzoIntermediario.IdPaese deve avere opzione 'nessuno'.
 
