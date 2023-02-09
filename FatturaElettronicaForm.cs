@@ -21,6 +21,7 @@ namespace FatturaElettronica.Forms
 
             InitializeControls();
             InitializeHeaderDataBindings();
+            ok.Select();
         }
         private void InitializeControls() {
 
