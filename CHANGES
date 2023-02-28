@@ -1,6 +1,7 @@
 Changelog
 =========
 
+- Fix: textbox ProgressivoInvio diventa 'public'. Addresses CIR2000/Amica20.WindowsApp#128.
 
 v 3.4.6
 =======

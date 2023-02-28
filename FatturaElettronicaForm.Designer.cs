@@ -2705,7 +2705,6 @@
         private System.Windows.Forms.TabPage tabConvalida;
         private System.Windows.Forms.Button convalida;
         private System.Windows.Forms.Button salvaApri;
-        private System.Windows.Forms.TextBox progressivoInvio;
         private System.Windows.Forms.TextBox PECDestinatario;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.TabPage tabCessionarioCommittenteStabileOrganizzazione;
@@ -2739,5 +2738,6 @@
         private System.Windows.Forms.ColumnHeader Messaggio;
         private System.Windows.Forms.ColumnHeader Codice;
         private System.Windows.Forms.Label lblErrori;
+        public System.Windows.Forms.TextBox progressivoInvio;
     }
 }

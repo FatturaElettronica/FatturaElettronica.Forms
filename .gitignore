@@ -160,3 +160,4 @@ packages
 !packages/respositories.config
 .vs/
 *.nupkg
+/nuget.exe
