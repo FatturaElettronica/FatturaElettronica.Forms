@@ -12,7 +12,7 @@
     <iconUrl>https://github.com/FatturaElettronica/FatturaElettronica.NET/raw/master/Artwork/FatturaElettronica64x64.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <copyright>Copyright 2017, 2022 Nicola Iarocci and Gestionali Amica</copyright>
+    <copyright>Copyright 2017, 2024 Nicola Iarocci and Gestionali Amica</copyright>
     <tags>fattura elettronica pubblica amministrazione privati xml</tags>
   </metadata>
 </package>
