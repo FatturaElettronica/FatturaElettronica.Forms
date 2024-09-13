@@ -103,7 +103,7 @@ namespace FatturaElettronica.Forms
             // SoggettoEmittente
             soggettoEmittente.DisplayMember = "Descrizione";
             soggettoEmittente.ValueMember = "Codice";
-            soggettoEmittente.DataSource = new SoggettoEmittente().List.ToList();
+            soggettoEmittente.DataSource = new SoggettoEmittenteNullable().List.ToList();
         }
         private void InitializeHeaderDataBindings() {
 
