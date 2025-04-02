@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Nicola Iarocci, CIR2000")]
 [assembly: AssemblyProduct("FatturaElettronica.Forms")]
-[assembly: AssemblyCopyright("Copyright © CIR2000 2017-2021")]
+[assembly: AssemblyCopyright("Copyright © CIR2000 2017-2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
