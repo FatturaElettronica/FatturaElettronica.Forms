@@ -7,6 +7,8 @@ using FluentValidation.Results;
 using FatturaElettronica.Tabelle;
 using FatturaElettronica.Ordinaria;
 using FatturaElettronica.Extensions;
+using System.Threading;
+using System.Globalization;
 
 namespace FatturaElettronica.Forms
 {
@@ -17,6 +19,9 @@ namespace FatturaElettronica.Forms
 
         public FatturaElettronicaForm()
         {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("it-IT");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("it-IT");
+
             InitializeComponent();
 
             InitializeControls();
